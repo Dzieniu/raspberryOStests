@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v4.8.3 (Sokndal)-->
+<?xml-stylesheet type="text/xsl" href="pts-results-viewer.xsl"?>
+<PhoronixTestSuite>
+  <Generated>
+    <Title>compressr</Title>
+    <LastModified>2017-05-28 13:58:50</LastModified>
+    <TestClient>Phoronix Test Suite v4.8.3 (Sokndal)</TestClient>
+    <Description>ARMv7 rev 4 testing with a BCM2709 and Gallium 0.4 on llvmpipe (LLVM 3.9 128 bits) on Raspbian 8.0 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>compressr</Identifier>
+    <Hardware>Processor: ARMv7 rev 4 @ 1.20GHz (4 Cores), Motherboard: BCM2709, Memory: 925MB, Disk: 31GB SA32G, Graphics: LLVMpipe</Hardware>
+    <Software>OS: Raspbian 8.0, Kernel: 4.4.50-v7+ (armv7l), Desktop: LXDE 0.7.2, Display Server: X Server 1.18.4, OpenGL: 3.3 Mesa 13.0.0 Gallium 0.4, Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1600x900</Software>
+    <User>pi</User>
+    <TimeStamp>2017-05-28 13:58:50</TimeStamp>
+    <TestClientVersion>4.8.3</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"cpu-scaling-governor":"BCM2835 Freq ondemand"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/compress-gzip-1.1.0</Identifier>
+    <Title>Gzip Compression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>2GB File Compression</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compressr</Identifier>
+        <Value>97.77</Value>
+        <RawString>116.59384512901:93.604983091354:93.95537686348:95.39740395546:93.368258953094:93.704499959946</RawString>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

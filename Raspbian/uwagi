@@ -1,0 +1,10 @@
+1. Wraz z instalacja systemu dostajemy mnostwo rzeczy do programowania i nauki:
+java ide, mathematica, python 2,3, scratch, geany programmers editor + pakiet 
+libreoffice, i podstawy, git	
+2. Małe mozliwosci ustawienia wygladu interfejsu ( ogranicza sie do zmiany tapety, 
+rozmiaru ikon i czcionek) 
+3. Czas uruchomienia systemu: 37.81s
+4. zasoby podczas uruchomienia systemu: 98.2MiB/926 - 10% , Proc: 1%
+5. postawienie serwera: http://malinowepi.pl/post/40685427538/serwer-www-i-php
+6. Chromium bardzo słabo chodzi, wykorzystanie procesora skacze miedzy 75-100% - 
+ciezko sie korzysta z sieci(pewnie przez skomplikowane skrypty JS)

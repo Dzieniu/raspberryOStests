@@ -1,0 +1,609 @@
+Booting Linux on physical CPU 0x0
+Initializing cgroup subsys cpuset
+Initializing cgroup subsys cpu
+Initializing cgroup subsys cpuacct
+Linux version 4.4.50-v7+ (dc4@dc4-XPS13-9333) (gcc version 4.9.3 (crosstool-NG crosstool-ng-1.22.0-88-g8460611) ) #970 SMP Mon Feb 20 19:18:29 GMT 2017
+CPU: ARMv7 Processor [410fd034] revision 4 (ARMv7), cr=10c5383d
+CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+Machine model: Raspberry Pi 3 Model B Rev 1.2
+cma: Reserved 8 MiB at 0x3a800000
+Memory policy: Data cache writealloc
+On node 0 totalpages: 241664
+free_area_init_node: node 0, pgdat 808c5040, node_mem_map b9fa6000
+  Normal zone: 2124 pages used for memmap
+  Normal zone: 0 pages reserved
+  Normal zone: 241664 pages, LIFO batch:31
+[bcm2709_smp_init_cpus] enter (9520->f3003010)
+[bcm2709_smp_init_cpus] ncores=4
+PERCPU: Embedded 13 pages/cpu @b9f62000 s22592 r8192 d22464 u53248
+pcpu-alloc: s22592 r8192 d22464 u53248 alloc=13*4096
+pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 239540
+PID hash table entries: 4096 (order: 2, 16384 bytes)
+Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+Memory: 939064K/966656K available (6357K kernel code, 432K rwdata, 1716K rodata, 476K init, 764K bss, 19400K reserved, 8192K cma-reserved)
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+    vmalloc : 0xbb800000 - 0xff800000   (1088 MB)
+    lowmem  : 0x80000000 - 0xbb000000   ( 944 MB)
+    modules : 0x7f000000 - 0x80000000   (  16 MB)
+      .text : 0x80008000 - 0x807ea73c   (8074 kB)
+      .init : 0x807eb000 - 0x80862000   ( 476 kB)
+      .data : 0x80862000 - 0x808ce350   ( 433 kB)
+       .bss : 0x808d1000 - 0x809901ec   ( 765 kB)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+Hierarchical RCU implementation.
+	Build-time adjustment of leaf fanout to 32.
+NR_IRQS:16 nr_irqs:16 16
+Architected cp15 timer(s) running at 19.20MHz (phys).
+clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+Switching to timer-based delay loop, resolution 52ns
+Console: colour dummy device 80x30
+console [tty1] enabled
+Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=192000)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Disabling cpuset control group subsystem
+Initializing cgroup subsys io
+Initializing cgroup subsys memory
+Initializing cgroup subsys devices
+Initializing cgroup subsys freezer
+Initializing cgroup subsys net_cls
+CPU: Testing write buffer coherency: ok
+ftrace: allocating 21246 entries in 63 pages
+CPU0: update cpu_capacity 1024
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[bcm2709_smp_prepare_cpus] enter
+Setting up static identity map for 0x8240 - 0x8274
+[bcm2709_boot_secondary] cpu:1 started (0) 18
+[bcm2709_secondary_init] enter cpu:1
+CPU1: update cpu_capacity 1024
+CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[bcm2709_boot_secondary] cpu:2 started (0) 18
+[bcm2709_secondary_init] enter cpu:2
+CPU2: update cpu_capacity 1024
+CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[bcm2709_boot_secondary] cpu:3 started (0) 17
+[bcm2709_secondary_init] enter cpu:3
+CPU3: update cpu_capacity 1024
+CPU3: thread -1, cpu 3, socket 0, mpidr 80000003
+Brought up 4 CPUs
+SMP: Total of 4 processors activated (153.60 BogoMIPS).
+CPU: All CPU(s) started in HYP mode.
+CPU: Virtualization extensions available.
+devtmpfs: initialized
+VFP support v0.3: implementor 41 architecture 3 part 40 variant 3 rev 4
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+pinctrl core: initialized pinctrl subsystem
+NET: Registered protocol family 16
+DMA: preallocated 4096 KiB pool for atomic coherent allocations
+hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+hw-breakpoint: maximum watchpoint size is 8 bytes.
+uart-pl011 3f201000.uart: could not find pctldev for node /soc/gpio@7e200000/uart0_pins, deferring probe
+bcm2835-mbox 3f00b880.mailbox: mailbox enabled
+bcm2835-dma 3f007000.dma: DMA legacy API manager at f3007000, dmachans=0x1
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+raspberrypi-firmware soc:firmware: Attached to firmware from 2017-04-05 11:49
+clocksource: Switched to clocksource arch_sys_counter
+FS-Cache: Loaded
+CacheFiles: Loaded
+NET: Registered protocol family 2
+TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+TCP: Hash tables configured (established 8192 bind 8192)
+UDP hash table entries: 512 (order: 2, 16384 bytes)
+UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+NET: Registered protocol family 1
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+hw perfevents: enabled with armv7_cortex_a7 PMU driver, 7 counters available
+futex hash table entries: 1024 (order: 4, 65536 bytes)
+VFS: Disk quotas dquot_6.6.0
+VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+FS-Cache: Netfs 'nfs' registered for caching
+NFS: Registering the id_resolver key type
+Key type id_resolver registered
+Key type id_legacy registered
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+io scheduler noop registered
+io scheduler deadline registered (default)
+io scheduler cfq registered
+BCM2708FB: allocated DMA memory fac10000
+BCM2708FB: allocated DMA channel 0 @ f3007000
+Console: switching to colour frame buffer device 200x56
+bcm2835-rng 3f104000.rng: hwrng registered
+vc-cma: Videocore CMA driver
+vc-cma: vc_cma_base      = 0x00000000
+vc-cma: vc_cma_size      = 0x00000000 (0 MiB)
+vc-cma: vc_cma_initial   = 0x00000000 (0 MiB)
+vc-mem: phys_addr:0x00000000 mem_base=0x3dc00000 mem_size:0x3f000000(1008 MiB)
+brd: module loaded
+loop: module loaded
+vchiq: vchiq_init_state: slot_zero = 0xbac80000, is_master = 0
+Loading iSCSI transport class v2.0-870.
+usbcore: registered new interface driver smsc95xx
+dwc_otg: version 3.00a 10-AUG-2012 (platform bus)
+Core Release: 2.80a
+Setting default values for core params
+Finished setting default values for core params
+Using Buffer DMA mode
+Periodic Transfer Interrupt Enhancement - disabled
+Multiprocessor Interrupt Enhancement - disabled
+OTG VER PARAM: 0, OTG VER FLAG: 0
+Dedicated Tx FIFOs mode
+WARN::dwc_otg_hcd_init:1047: FIQ DMA bounce buffers: virt = 0xbac04000 dma = 0xfac04000 len=9024
+FIQ FSM acceleration enabled for :
+Non-periodic Split Transactions
+Periodic Split Transactions
+High-Speed Isochronous Endpoints
+Interrupt/Control Split Transaction hack enabled
+dwc_otg: Microframe scheduler enabled
+WARN::hcd_init_fiq:415: FIQ on core 1 at 0x80448d28
+WARN::hcd_init_fiq:416: FIQ ASM at 0x80449098 length 36
+WARN::hcd_init_fiq:441: MPHI regs_base at 0xbb87e000
+dwc_otg 3f980000.usb: DWC OTG Controller
+dwc_otg 3f980000.usb: new USB bus registered, assigned bus number 1
+dwc_otg 3f980000.usb: irq 62, io mem 0x00000000
+Init: Port Power? op_state=1
+Init: Power Port (0)
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: DWC OTG Controller
+usb usb1: Manufacturer: Linux 4.4.50-v7+ dwc_otg_hcd
+usb usb1: SerialNumber: 3f980000.usb
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+dwc_otg: FIQ enabled
+dwc_otg: NAK holdoff enabled
+dwc_otg: FIQ split-transaction FSM enabled
+Module dwc_common_port init
+usbcore: registered new interface driver usb-storage
+mousedev: PS/2 mouse device common for all mice
+bcm2835-cpufreq: min=600000 max=1200000
+sdhci: Secure Digital Host Controller Interface driver
+sdhci: Copyright(c) Pierre Ossman
+sdhost: log_buf @ bac07000 (fac07000)
+mmc0: sdhost-bcm2835 loaded - DMA enabled (>1)
+mmc-bcm2835 3f300000.mmc: mmc_debug:0 mmc_debug2:0
+mmc-bcm2835 3f300000.mmc: DMA channel allocated
+mmc0: host does not support reading read-only switch, assuming write-enable
+mmc0: new high speed SDHC card at address 1234
+mmcblk0: mmc0:1234 SA32G 28.9 GiB
+sdhci-pltfm: SDHCI platform and OF driver helper
+ledtrig-cpu: registered to indicate activity on CPUs
+hidraw: raw HID events driver (C) Jiri Kosina
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+Initializing XFRM netlink socket
+NET: Registered protocol family 17
+Key type dns_resolver registered
+ mmcblk0: p1 p2
+Registering SWP/SWPB emulation handler
+registered taskstats version 1
+vc-sm: Videocore shared memory driver
+[vc_sm_connected_init]: start
+[vc_sm_connected_init]: end - returning 0
+3f201000.uart: ttyAMA0 at MMIO 0x3f201000 (irq = 87, base_baud = 0) is a PL011 rev2
+of_cfs_init
+of_cfs_init: OK
+EXT4-fs (mmcblk0p2): INFO: recovery required on readonly filesystem
+EXT4-fs (mmcblk0p2): write access will be enabled during recovery
+mmc1: queuing unknown CIS tuple 0x80 (2 bytes)
+mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+mmc1: queuing unknown CIS tuple 0x80 (7 bytes)
+Indeed it is in host mode hprt0 = 00021501
+mmc1: new high speed SDIO card at address 0001
+usb 1-1: new high-speed USB device number 2 using dwc_otg
+Indeed it is in host mode hprt0 = 00001101
+usb 1-1: New USB device found, idVendor=0424, idProduct=9514
+usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+hub 1-1:1.0: USB hub found
+hub 1-1:1.0: 5 ports detected
+usb 1-1.1: new high-speed USB device number 3 using dwc_otg
+usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+smsc95xx v1.0.4
+smsc95xx 1-1.1:1.0 eth0: register 'smsc95xx' at usb-3f980000.usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:fa:dd:a0
+usb 1-1.2: new full-speed USB device number 4 using dwc_otg
+usb 1-1.2: New USB device found, idVendor=17ef, idProduct=6053
+usb 1-1.2: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 1-1.2: Product: Lenovo Wireless Optical Mouse N100
+input: Lenovo Wireless Optical Mouse N100 as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.2/1-1.2:1.0/0003:17EF:6053.0001/input/input0
+hid-generic 0003:17EF:6053.0001: input,hidraw0: USB HID v1.11 Mouse [Lenovo Wireless Optical Mouse N100] on usb-3f980000.usb-1.2/input0
+usb 1-1.3: new full-speed USB device number 5 using dwc_otg
+usb 1-1.3: New USB device found, idVendor=046d, idProduct=c52b
+usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.3: Product: USB Receiver
+usb 1-1.3: Manufacturer: Logitech
+EXT4-fs (mmcblk0p2): orphan cleanup on readonly fs
+EXT4-fs (mmcblk0p2): 8 orphan inodes deleted
+EXT4-fs (mmcblk0p2): recovery complete
+EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+VFS: Mounted root (ext4 filesystem) readonly on device 179:2.
+devtmpfs: mounted
+Freeing unused kernel memory: 476K (807eb000 - 80862000)
+random: systemd: uninitialized urandom read (16 bytes read, 88 bits of entropy available)
+systemd[1]: systemd 215 running in system mode. (+PAM +AUDIT +SELINUX +IMA +SYSVINIT +LIBCRYPTSETUP +GCRYPT +ACL +XZ -SECCOMP -APPARMOR)
+systemd[1]: Detected architecture 'arm'.
+NET: Registered protocol family 10
+systemd[1]: Inserted module 'ipv6'
+systemd[1]: Set hostname to <raspberrypi>.
+random: systemd: uninitialized urandom read (16 bytes read, 89 bits of entropy available)
+systemd[1]: Initializing machine ID from random generator.
+systemd[1]: Installed transient /etc/machine-id file.
+random: systemd-sysv-ge: uninitialized urandom read (16 bytes read, 90 bits of entropy available)
+random: systemd: uninitialized urandom read (16 bytes read, 91 bits of entropy available)
+random: systemd: uninitialized urandom read (16 bytes read, 91 bits of entropy available)
+random: systemd: uninitialized urandom read (16 bytes read, 91 bits of entropy available)
+random: systemd: uninitialized urandom read (16 bytes read, 91 bits of entropy available)
+random: systemd: uninitialized urandom read (16 bytes read, 91 bits of entropy available)
+random: systemd: uninitialized urandom read (16 bytes read, 91 bits of entropy available)
+random: systemd: uninitialized urandom read (16 bytes read, 92 bits of entropy available)
+systemd[1]: Cannot add dependency job for unit regenerate_ssh_host_keys.service, ignoring: Unit regenerate_ssh_host_keys.service failed to load: No such file or directory.
+systemd[1]: Starting Forward Password Requests to Wall Directory Watch.
+systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+systemd[1]: Starting Remote File Systems (Pre).
+systemd[1]: Reached target Remote File Systems (Pre).
+systemd[1]: Starting Arbitrary Executable File Formats File System Automount Point.
+systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+systemd[1]: Starting Encrypted Volumes.
+systemd[1]: Reached target Encrypted Volumes.
+systemd[1]: Starting Swap.
+systemd[1]: Reached target Swap.
+systemd[1]: Expecting device dev-disk-by\x2dpartuuid-69229133\x2d01.device...
+systemd[1]: Starting Root Slice.
+systemd[1]: Created slice Root Slice.
+systemd[1]: Starting User and Session Slice.
+systemd[1]: Created slice User and Session Slice.
+systemd[1]: Starting /dev/initctl Compatibility Named Pipe.
+systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
+systemd[1]: Starting Delayed Shutdown Socket.
+systemd[1]: Listening on Delayed Shutdown Socket.
+systemd[1]: Starting Journal Socket (/dev/log).
+systemd[1]: Listening on Journal Socket (/dev/log).
+systemd[1]: Starting udev Control Socket.
+systemd[1]: Listening on udev Control Socket.
+systemd[1]: Starting udev Kernel Socket.
+systemd[1]: Listening on udev Kernel Socket.
+systemd[1]: Starting Journal Socket.
+systemd[1]: Listening on Journal Socket.
+systemd[1]: Starting System Slice.
+systemd[1]: Created slice System Slice.
+systemd[1]: Starting File System Check on Root Device...
+systemd[1]: Starting system-systemd\x2dfsck.slice.
+systemd[1]: Created slice system-systemd\x2dfsck.slice.
+systemd[1]: Starting system-autologin.slice.
+systemd[1]: Created slice system-autologin.slice.
+systemd[1]: Starting Increase datagram queue length...
+systemd[1]: Starting Restore / save the current clock...
+systemd[1]: Starting Create list of required static device nodes for the current kernel...
+systemd[1]: Mounted Huge Pages File System.
+systemd[1]: Started Set Up Additional Binary Formats.
+systemd[1]: Starting udev Coldplug all Devices...
+systemd[1]: Mounting Debug File System...
+systemd[1]: Mounting POSIX Message Queue File System...
+systemd[1]: Starting Load Kernel Modules...
+systemd[1]: Starting Slices.
+systemd[1]: Reached target Slices.
+systemd[1]: Started Create list of required static device nodes for the current kernel.
+systemd[1]: Started Increase datagram queue length.
+systemd[1]: Mounted Debug File System.
+systemd[1]: Mounted POSIX Message Queue File System.
+systemd[1]: Started Restore / save the current clock.
+systemd[1]: Time has been changed
+fuse init (API version 7.23)
+systemd[1]: Started udev Coldplug all Devices.
+i2c /dev entries driver
+systemd[1]: Started Load Kernel Modules.
+systemd[1]: Mounting Configuration File System...
+systemd[1]: Mounting FUSE Control File System...
+systemd[1]: Starting Apply Kernel Variables...
+systemd[1]: Starting Syslog Socket.
+systemd[1]: Listening on Syslog Socket.
+systemd[1]: Starting Journal Service...
+systemd[1]: Started Journal Service.
+systemd-udevd[138]: starting version 215
+bcm2835-wdt 3f100000.watchdog: Broadcom BCM2835 watchdog timer
+gpiomem-bcm2835 3f200000.gpiomem: Initialised: Registers at 0x3f200000
+logitech-djreceiver 0003:046D:C52B.0004: hiddev0,hidraw1: USB HID v1.11 Device [Logitech USB Receiver] on usb-3f980000.usb-1.3/input2
+EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+input: Logitech K360 as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.2/0003:046D:C52B.0004/0003:046D:4004.0005/input/input1
+logitech-hidpp-device 0003:046D:4004.0005: input,hidraw2: USB HID v1.11 Keyboard [Logitech K360] on usb-3f980000.usb-1.3:1
+input: Logitech K360 as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.2/0003:046D:C52B.0004/0003:046D:4004.0006/input/input2
+usbcore: registered new interface driver brcmfmac
+logitech-hidpp-device 0003:046D:4004.0006: input,hidraw3: USB HID v1.11 Keyboard [Logitech K360] on usb-3f980000.usb-1.3:2
+random: nonblocking pool is initialized
+brcmfmac: brcmf_c_preinit_dcmds: Firmware version = wl0: May 27 2016 00:13:38 version 7.45.41.26 (r640327) FWID 01-df77e4a7
+brcmfmac: brcmf_cfg80211_reg_notifier: not a ISO3166 code
+brcmfmac: brcmf_cfg80211_reg_notifier: not a ISO3166 code
+cfg80211: World regulatory domain updated:
+cfg80211:  DFS Master region: unset
+cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp), (dfs_cac_time)
+cfg80211:   (2402000 KHz - 2472000 KHz @ 40000 KHz), (N/A, 2000 mBm), (N/A)
+cfg80211:   (2457000 KHz - 2482000 KHz @ 20000 KHz, 92000 KHz AUTO), (N/A, 2000 mBm), (N/A)
+cfg80211:   (2474000 KHz - 2494000 KHz @ 20000 KHz), (N/A, 2000 mBm), (N/A)
+cfg80211:   (5170000 KHz - 5250000 KHz @ 80000 KHz, 160000 KHz AUTO), (N/A, 2000 mBm), (N/A)
+cfg80211:   (5250000 KHz - 5330000 KHz @ 80000 KHz, 160000 KHz AUTO), (N/A, 2000 mBm), (0 s)
+cfg80211:   (5490000 KHz - 5730000 KHz @ 160000 KHz), (N/A, 2000 mBm), (0 s)
+cfg80211:   (5735000 KHz - 5835000 KHz @ 80000 KHz), (N/A, 2000 mBm), (N/A)
+cfg80211:   (57240000 KHz - 63720000 KHz @ 2160000 KHz), (N/A, 0 mBm), (N/A)
+systemd-journald[131]: Received request to flush runtime journal from PID 1
+brcmfmac: brcmf_add_if: ERROR: netdev:wlan0 already exists
+brcmfmac: brcmf_add_if: ignore IF event
+IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+brcmfmac: power management disabled
+uart-pl011 3f201000.uart: no DMA platform data
+Adding 102396k swap on /var/swap.  Priority:-1 extents:5 across:225280k SSFS
+cfg80211: Regulatory domain changed to country: GB
+cfg80211:  DFS Master region: ETSI
+cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp), (dfs_cac_time)
+cfg80211:   (2402000 KHz - 2482000 KHz @ 40000 KHz), (N/A, 2000 mBm), (N/A)
+cfg80211:   (5170000 KHz - 5250000 KHz @ 80000 KHz, 160000 KHz AUTO), (N/A, 2000 mBm), (N/A)
+cfg80211:   (5250000 KHz - 5330000 KHz @ 80000 KHz, 160000 KHz AUTO), (N/A, 2000 mBm), (0 s)
+cfg80211:   (5490000 KHz - 5710000 KHz @ 160000 KHz), (N/A, 2700 mBm), (0 s)
+cfg80211:   (57000000 KHz - 66000000 KHz @ 2160000 KHz), (N/A, 4000 mBm), (N/A)
+smsc95xx 1-1.1:1.0 eth0: hardware isn't capable of remote wakeup
+IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+Bluetooth: Core ver 2.21
+NET: Registered protocol family 31
+Bluetooth: HCI device and connection manager initialized
+Bluetooth: HCI socket layer initialized
+Bluetooth: L2CAP socket layer initialized
+Bluetooth: SCO socket layer initialized
+Bluetooth: HCI UART driver ver 2.3
+Bluetooth: HCI UART protocol H4 registered
+Bluetooth: HCI UART protocol Three-wire (H5) registered
+Bluetooth: HCI UART protocol BCM registered
+Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+Bluetooth: BNEP filters: protocol multicast
+Bluetooth: BNEP socket layer initialized
+usb 1-1.2: USB disconnect, device number 4
+usb 1-1.3: USB disconnect, device number 5
+usb 1-1.2: new full-speed USB device number 6 using dwc_otg
+usb 1-1.2: New USB device found, idVendor=046d, idProduct=c52b
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB Receiver
+usb 1-1.2: Manufacturer: Logitech
+logitech-djreceiver 0003:046D:C52B.0009: hiddev0,hidraw0: USB HID v1.11 Device [Logitech USB Receiver] on usb-3f980000.usb-1.2/input2
+input: Logitech K360 as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.2/1-1.2:1.2/0003:046D:C52B.0009/0003:046D:4004.000A/input/input3
+logitech-hidpp-device 0003:046D:4004.000A: input,hidraw1: USB HID v1.11 Keyboard [Logitech K360] on usb-3f980000.usb-1.2:1
+input: Logitech K360 as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.2/1-1.2:1.2/0003:046D:C52B.0009/0003:046D:4004.000B/input/input4
+logitech-hidpp-device 0003:046D:4004.000B: input,hidraw2: USB HID v1.11 Keyboard [Logitech K360] on usb-3f980000.usb-1.2:2
+Watchdog invoked oom-killer: gfp_mask=0x24201ca, order=0, oom_score_adj=200
+Watchdog cpuset=/ mems_allowed=0
+CPU: 3 PID: 1123 Comm: Watchdog Not tainted 4.4.50-v7+ #970
+Hardware name: BCM2709
+[<800187c0>] (unwind_backtrace) from [<80014094>] (show_stack+0x20/0x24)
+[<80014094>] (show_stack) from [<80321ce4>] (dump_stack+0xd4/0x118)
+[<80321ce4>] (dump_stack) from [<801554f0>] (dump_header+0x64/0x18c)
+[<801554f0>] (dump_header) from [<80102fa4>] (oom_kill_process+0x350/0x49c)
+[<80102fa4>] (oom_kill_process) from [<80103474>] (out_of_memory+0x30c/0x344)
+[<80103474>] (out_of_memory) from [<8010878c>] (__alloc_pages_nodemask+0x9a0/0x9e0)
+[<8010878c>] (__alloc_pages_nodemask) from [<80101908>] (filemap_fault+0x238/0x50c)
+[<80101908>] (filemap_fault) from [<801ec3a0>] (ext4_filemap_fault+0x3c/0x50)
+[<801ec3a0>] (ext4_filemap_fault) from [<8012af80>] (__do_fault+0x4c/0xb4)
+[<8012af80>] (__do_fault) from [<8012e86c>] (handle_mm_fault+0x8d8/0x112c)
+[<8012e86c>] (handle_mm_fault) from [<805bd548>] (do_page_fault+0x340/0x3b4)
+[<805bd548>] (do_page_fault) from [<800092a8>] (do_PrefetchAbort+0x44/0xa8)
+[<800092a8>] (do_PrefetchAbort) from [<805bd0a4>] (ret_from_exception+0x0/0x1c)
+Exception stack(0xa7abffb0 to 0xa7abfff8)
+ffa0:                                     5c49b1d8 5c467a9c 73b01660 ffffffff
+ffc0: 73b00dc0 5c467a90 5c467ac4 74406aa8 74406ab0 00000000 74406a78 74406af8
+ffe0: 5b356b60 74406a38 566c8694 567318c4 60000010 ffffffff
+Mem-Info:
+active_anon:110569 inactive_anon:110586 isolated_anon:0
+ active_file:234 inactive_file:254 isolated_file:0
+ unevictable:0 dirty:0 writeback:9131 unstable:0
+ slab_reclaimable:2549 slab_unreclaimable:3422
+ mapped:12273 shmem:12122 pagetables:1716 bounce:0
+ free:4091 free_pcp:319 free_cma:0
+Normal free:16364kB min:16384kB low:20480kB high:24576kB active_anon:442276kB inactive_anon:442344kB active_file:936kB inactive_file:1016kB unevictable:0kB isolated(anon):0kB isolated(file):0kB present:966656kB managed:947732kB mlocked:0kB dirty:0kB writeback:36524kB mapped:49092kB shmem:48488kB slab_reclaimable:10196kB slab_unreclaimable:13688kB kernel_stack:2208kB pagetables:6864kB unstable:0kB bounce:0kB free_pcp:1276kB local_pcp:640kB free_cma:0kB writeback_tmp:0kB pages_scanned:112372 all_unreclaimable? yes
+lowmem_reserve[]: 0 0
+Normal: 151*4kB (UE) 524*8kB (UME) 89*16kB (UME) 89*32kB (UE) 32*64kB (UME) 15*128kB (UME) 11*256kB (UME) 1*512kB (E) 0*1024kB 0*2048kB 0*4096kB = 16364kB
+27411 total pagecache pages
+14706 pages in swap cache
+Swap cache stats: add 25691, delete 10985, find 25/41
+Free swap  = 0kB
+Total swap = 102396kB
+241664 pages RAM
+0 pages HighMem/MovableOnly
+4731 pages reserved
+2048 pages cma reserved
+[ pid ]   uid  tgid total_vm      rss nr_ptes nr_pmds swapents oom_score_adj name
+[  131]     0   131     2486      222       7       0       39             0 systemd-journal
+[  138]     0   138     2988       39       8       0      163         -1000 systemd-udevd
+[  415]     0   415     1275       21       6       0       35             0 cron
+[  419]     0   419      963       25       5       0       41             0 systemd-logind
+[  422]   105   422      969       38       6       0       30             0 avahi-daemon
+[  424]   104   424     1429       74       7       0       59          -900 dbus-daemon
+[  438]     0   438      641       24       5       0       47             0 dhcpcd
+[  443] 65534   443      573       17       5       0       15             0 thd
+[  457]   105   457      969        8       5       0       48             0 avahi-daemon
+[  492]     0   492     8036       71      11       0      131             0 rsyslogd
+[  493]     0   493     1789       39       7       0       69             0 wpa_supplicant
+[  576]     0   576    10136       37      15       0      174             0 lightdm
+[  586]   106   586     1422       50       6       0       59             0 ntpd
+[  587]     0   587     1435        2       7       0      113             0 login
+[  631]     0   631    52254     7796      69       0     2632             0 Xorg
+[  643]     0   643     8237       39      14       0      194             0 lightdm
+[  651]  1000   651     1244        1       6       0       97             0 systemd
+[  654]  1000   654     1713       22       7       0      284             0 (sd-pam)
+[  657]  1000   657    13065       38      20       0      285             0 lxsession
+[  676]     0   676      517        1       4       0       32             0 hciattach
+[  688]     0   688     1252       36       8       0       34             0 bluetoothd
+[  718]  1000   718      925        9       5       0       43             0 ssh-agent
+[  721]  1000   721      809        0       5       0       43             0 dbus-launch
+[  725]  1000   725     1402       63       6       0       46             0 dbus-daemon
+[  728]  1000   728     1620        1       8       0      391             0 bash
+[  742]  1000   742     7746        0      14       0      130             0 gvfsd
+[  752]  1000   752    12130        0      16       0      193             0 gvfsd-fuse
+[  762]  1000   762     5450      486      14       0      311             0 openbox
+[  764]  1000   764     7593        0      15       0      229             0 lxpolkit
+[  767]  1000   767    23823      585      33       0      616             0 lxpanel
+[  768]  1000   768    38310     2448      35       0      251             0 pcmanfm
+[  773]     0   773    10238        1      15       0      317             0 polkitd
+[  776]  1000   776      925        0       5       0       51             0 ssh-agent
+[  797]  1000   797    10743        1      16       0      242             0 gvfs-udisks2-vo
+[  802]   111   802     5344        4       9       0       47             0 rtkit-daemon
+[  805]     0   805    14767       68      19       0      227             0 udisksd
+[  907]  1000   907     7482       47      12       0       81             0 gvfs-mtp-volume
+[  911]  1000   911     7737       35      13       0      120             0 gvfs-gphoto2-vo
+[  917]  1000   917    10603        0      15       0      185             0 gvfs-afc-volume
+[  923]  1000   923     7508        1      13       0      118             0 gvfs-goa-volume
+[  927]  1000   927      478        0       5       0       20             0 start-pulseaudi
+[  928]  1000   928     1449       27       6       0       24             0 xprop
+[  933]  1000   933     7423        0      12       0      153             0 menu-cached
+[  950]  1000   950    15093       25      17       0      180             0 gvfsd-trash
+[ 1003]  1000  1003     5183       48      10       0       67             0 gvfsd-metadata
+[ 1007]  1000  1007   129131    11287     159       0     2189             0 chromium-browse
+[ 1025]  1000  1025      540        0       5       0       22             0 chrome-sandbox
+[ 1026]  1000  1026    47405      277      72       0      921             0 chromium-browse
+[ 1031]  1000  1031    47405      299      32       0      903             0 chromium-browse
+[ 1060]  1000  1060     2291       44      10       0       49             0 gconfd-2
+[ 1070]  1000  1070    97457     1868     157       0     5926           300 chromium-browse
+[ 1090]  1000  1090   105258    10156     181       0     5569           300 chromium-browse
+[ 1116]  1000  1116    64702       47      92       0     2435           200 chromium-browse
+[ 1157]  1000  1157    11727      820      22       0        5             0 x-terminal-emul
+[ 1158]  1000  1158      587       34       5       0        0             0 gnome-pty-helpe
+[ 1159]  1000  1159     1587      375       6       0        0             0 bash
+[ 1212]  1000  1212     1676       74       7       0        0             0 xfconfd
+[ 7353]     0  7353    11670      224      17       0        0             0 packagekitd
+[ 9193]  1000  9193      478       16       4       0        0             0 phoronix-test-s
+[ 9195]  1000  9195     8728     1754      19       0        0             0 php5
+[ 9263]  1000  9263      479       16       6       0        0             0 sh
+[ 9264]  1000  9264      478       16       5       0        0             0 compress-7zip
+[ 9265]  1000  9265   231019   172178     362       0        0             0 7za
+Out of memory: Kill process 9265 (7za) score 657 or sacrifice child
+Killed process 9265 (7za) total-vm:924076kB, anon-rss:688680kB, file-rss:32kB
+usb 1-1.2: USB disconnect, device number 6
+usb 1-1.4: new full-speed USB device number 7 using dwc_otg
+usb 1-1.4: New USB device found, idVendor=046d, idProduct=c52b
+usb 1-1.4: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.4: Product: USB Receiver
+usb 1-1.4: Manufacturer: Logitech
+logitech-djreceiver 0003:046D:C52B.000E: hiddev0,hidraw0: USB HID v1.11 Device [Logitech USB Receiver] on usb-3f980000.usb-1.4/input2
+input: Logitech K360 as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.4/1-1.4:1.2/0003:046D:C52B.000E/0003:046D:4004.000F/input/input5
+logitech-hidpp-device 0003:046D:4004.000F: input,hidraw1: USB HID v1.11 Keyboard [Logitech K360] on usb-3f980000.usb-1.4:1
+input: Logitech K360 as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.4/1-1.4:1.2/0003:046D:C52B.000E/0003:046D:4004.0010/input/input6
+logitech-hidpp-device 0003:046D:4004.0010: input,hidraw2: USB HID v1.11 Keyboard [Logitech K360] on usb-3f980000.usb-1.4:2
+7za invoked oom-killer: gfp_mask=0x24200ca, order=0, oom_score_adj=0
+7za cpuset=/ mems_allowed=0
+CPU: 1 PID: 9381 Comm: 7za Not tainted 4.4.50-v7+ #970
+Hardware name: BCM2709
+[<800187c0>] (unwind_backtrace) from [<80014094>] (show_stack+0x20/0x24)
+[<80014094>] (show_stack) from [<80321ce4>] (dump_stack+0xd4/0x118)
+[<80321ce4>] (dump_stack) from [<801554f0>] (dump_header+0x64/0x18c)
+[<801554f0>] (dump_header) from [<80102fa4>] (oom_kill_process+0x350/0x49c)
+[<80102fa4>] (oom_kill_process) from [<80103474>] (out_of_memory+0x30c/0x344)
+[<80103474>] (out_of_memory) from [<8010878c>] (__alloc_pages_nodemask+0x9a0/0x9e0)
+[<8010878c>] (__alloc_pages_nodemask) from [<8012eda0>] (handle_mm_fault+0xe0c/0x112c)
+[<8012eda0>] (handle_mm_fault) from [<805bd548>] (do_page_fault+0x340/0x3b4)
+[<805bd548>] (do_page_fault) from [<800091e8>] (do_DataAbort+0x48/0xc4)
+[<800091e8>] (do_DataAbort) from [<805bce24>] (__dabt_usr+0x44/0x60)
+Exception stack(0xb912ffb0 to 0xb912fff8)
+ffa0:                                     617e7000 03b4c776 00000007 68ae0607
+ffc0: 00000020 00000000 00000000 617d7bb0 75a1bdac 75a1bda4 02000001 01b4e5ff
+ffe0: 00000059 74afed80 0000000b 000d4df8 80000010 ffffffff
+Mem-Info:
+active_anon:110907 inactive_anon:110943 isolated_anon:0
+ active_file:144 inactive_file:160 isolated_file:0
+ unevictable:0 dirty:2 writeback:207 unstable:0
+ slab_reclaimable:2479 slab_unreclaimable:2915
+ mapped:13080 shmem:12995 pagetables:1744 bounce:0
+ free:4091 free_pcp:295 free_cma:669
+Normal free:16364kB min:16384kB low:20480kB high:24576kB active_anon:443628kB inactive_anon:443772kB active_file:576kB inactive_file:640kB unevictable:0kB isolated(anon):0kB isolated(file):0kB present:966656kB managed:947732kB mlocked:0kB dirty:8kB writeback:828kB mapped:52320kB shmem:51980kB slab_reclaimable:9916kB slab_unreclaimable:11660kB kernel_stack:2248kB pagetables:6976kB unstable:0kB bounce:0kB free_pcp:1180kB local_pcp:200kB free_cma:2676kB writeback_tmp:0kB pages_scanned:185700 all_unreclaimable? yes
+lowmem_reserve[]: 0 0
+Normal: 107*4kB (UE) 203*8kB (EC) 111*16kB (UE) 88*32kB (UE) 41*64kB (UE) 18*128kB (UE) 7*256kB (UE) 2*512kB (EC) 0*1024kB 1*2048kB (C) 0*4096kB = 16436kB
+13936 total pagecache pages
+612 pages in swap cache
+Swap cache stats: add 27853, delete 27241, find 2562/2850
+Free swap  = 0kB
+Total swap = 102396kB
+241664 pages RAM
+0 pages HighMem/MovableOnly
+4731 pages reserved
+2048 pages cma reserved
+[ pid ]   uid  tgid total_vm      rss nr_ptes nr_pmds swapents oom_score_adj name
+[  131]     0   131     2521      193       7       0       33             0 systemd-journal
+[  138]     0   138     2988       85       8       0      126         -1000 systemd-udevd
+[  415]     0   415     1275       21       6       0       35             0 cron
+[  419]     0   419      963       26       5       0       41             0 systemd-logind
+[  422]   105   422      969       37       6       0       30             0 avahi-daemon
+[  424]   104   424     1429       74       7       0       59          -900 dbus-daemon
+[  438]     0   438      641       24       5       0       47             0 dhcpcd
+[  443] 65534   443      573       21       5       0       14             0 thd
+[  457]   105   457      969        8       5       0       48             0 avahi-daemon
+[  492]     0   492     8036       97      11       0      112             0 rsyslogd
+[  493]     0   493     1789       41       7       0       69             0 wpa_supplicant
+[  576]     0   576    10136       37      15       0      174             0 lightdm
+[  586]   106   586     1422       53       6       0       59             0 ntpd
+[  587]     0   587     1435        2       7       0      113             0 login
+[  631]     0   631    53605     9165      72       0     2623             0 Xorg
+[  643]     0   643     8237       39      14       0      194             0 lightdm
+[  651]  1000   651     1244        1       6       0       97             0 systemd
+[  654]  1000   654     1713       22       7       0      284             0 (sd-pam)
+[  657]  1000   657    13065       54      20       0      277             0 lxsession
+[  676]     0   676      517        1       4       0       32             0 hciattach
+[  688]     0   688     1252       51       8       0       30             0 bluetoothd
+[  718]  1000   718      925        9       5       0       43             0 ssh-agent
+[  721]  1000   721      809        0       5       0       43             0 dbus-launch
+[  725]  1000   725     1402       33       6       0       76             0 dbus-daemon
+[  728]  1000   728     1620        1       8       0      391             0 bash
+[  742]  1000   742     7746        0      14       0      130             0 gvfsd
+[  752]  1000   752    12130        0      16       0      193             0 gvfsd-fuse
+[  762]  1000   762     5450      626      14       0      205             0 openbox
+[  764]  1000   764     7593        7      15       0      218             0 lxpolkit
+[  767]  1000   767    23823      590      33       0      619             0 lxpanel
+[  768]  1000   768    38310     2454      35       0      251             0 pcmanfm
+[  773]     0   773    10238        1      15       0      317             0 polkitd
+[  776]  1000   776      925        0       5       0       51             0 ssh-agent
+[  797]  1000   797    10743        1      16       0      242             0 gvfs-udisks2-vo
+[  802]   111   802     5344       18       9       0       36             0 rtkit-daemon
+[  805]     0   805    14767       68      19       0      227             0 udisksd
+[  907]  1000   907     7482       47      12       0       81             0 gvfs-mtp-volume
+[  911]  1000   911     7737       35      13       0      120             0 gvfs-gphoto2-vo
+[  917]  1000   917    10603        0      15       0      185             0 gvfs-afc-volume
+[  923]  1000   923     7508        1      13       0      118             0 gvfs-goa-volume
+[  927]  1000   927      478        0       5       0       20             0 start-pulseaudi
+[  928]  1000   928     1449       29       6       0       24             0 xprop
+[  933]  1000   933     7423        0      12       0      153             0 menu-cached
+[  950]  1000   950    15093       25      17       0      180             0 gvfsd-trash
+[ 1003]  1000  1003     5183       48      10       0       67             0 gvfsd-metadata
+[ 1007]  1000  1007   148395    10653     167       0     2420             0 chromium-browse
+[ 1025]  1000  1025      540        0       5       0       22             0 chrome-sandbox
+[ 1026]  1000  1026    47405      277      72       0      921             0 chromium-browse
+[ 1031]  1000  1031    47405      299      32       0      903             0 chromium-browse
+[ 1060]  1000  1060     2291       48      10       0       51             0 gconfd-2
+[ 1070]  1000  1070    97457     1872     157       0     5922           300 chromium-browse
+[ 1090]  1000  1090   106090    11724     183       0     4697           300 chromium-browse
+[ 1116]  1000  1116    64702       47      92       0     2435           200 chromium-browse
+[ 1157]  1000  1157    11727      370      22       0      463             0 x-terminal-emul
+[ 1158]  1000  1158      587        1       5       0       33             0 gnome-pty-helpe
+[ 1159]  1000  1159     1587       24       6       0      351             0 bash
+[ 1212]  1000  1212     1676        1       7       0       73             0 xfconfd
+[ 7353]     0  7353    11670      224      17       0        0             0 packagekitd
+[ 9193]  1000  9193      478       16       4       0        0             0 phoronix-test-s
+[ 9195]  1000  9195     8728     1762      19       0        0             0 php5
+[ 9343]  1000  9343      479       16       6       0        0             0 sh
+[ 9344]  1000  9344      478       16       5       0        0             0 compress-7zip
+[ 9345]  1000  9345   231019   184791     383       0        0             0 7za
+Out of memory: Kill process 9345 (7za) score 705 or sacrifice child
+Killed process 9345 (7za) total-vm:924076kB, anon-rss:739044kB, file-rss:120kB
+usb 1-1.2: new full-speed USB device number 8 using dwc_otg
+usb 1-1.2: New USB device found, idVendor=17ef, idProduct=6053
+usb 1-1.2: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 1-1.2: Product: Lenovo Wireless Optical Mouse N100
+input: Lenovo Wireless Optical Mouse N100 as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.2/1-1.2:1.0/0003:17EF:6053.0011/input/input7
+hid-generic 0003:17EF:6053.0011: input,hidraw3: USB HID v1.11 Mouse [Lenovo Wireless Optical Mouse N100] on usb-3f980000.usb-1.2/input0
+usb 1-1.2: USB disconnect, device number 8
