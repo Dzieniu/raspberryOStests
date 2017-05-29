@@ -1,0 +1,44 @@
+Module                  Size  Used by
+rfcomm                 33778  14
+fuse                   84037  3
+cmac                    2939  0
+ecb                     2127  0
+bnep                   10340  2
+hci_uart               17943  1
+btbcm                   5929  1 hci_uart
+bluetooth             326105  37 bnep,btbcm,hci_uart,rfcomm
+brcmfmac              186403  0
+brcmutil                5661  1 brcmfmac
+cfg80211              428431  1 brcmfmac
+rfkill                 16037  7 cfg80211,bluetooth
+bcm2835_gpiomem         3040  0
+bcm2835_wdt             3225  0
+uio_pdrv_genirq         3164  0
+uio                     8000  1 uio_pdrv_genirq
+evdev                  11396  6
+joydev                  9024  0
+hid_logitech_hidpp     10382  0
+hid_logitech_dj        10016  0
+snd_bcm2835            20447  1
+snd_pcm_oss            37649  0
+snd_mixer_oss          14119  1 snd_pcm_oss
+snd_pcm                75762  2 snd_bcm2835,snd_pcm_oss
+snd_seq_dummy           1269  0
+snd_seq_oss            30670  0
+snd_seq_midi            4503  0
+snd_rawmidi            18516  1 snd_seq_midi
+snd_seq_midi_event      5546  2 snd_seq_oss,snd_seq_midi
+snd_seq                53119  6 snd_seq_midi_event,snd_seq_oss,snd_seq_dummy,snd_seq_midi
+snd_seq_device          3621  4 snd_seq,snd_rawmidi,snd_seq_oss,snd_seq_midi
+snd_timer              19288  2 snd_pcm,snd_seq
+snd                    51908  11 snd_bcm2835,snd_pcm_oss,snd_timer,snd_pcm,snd_seq,snd_rawmidi,snd_seq_oss,snd_seq_device,snd_mixer_oss
+i2c_dev                 5859  0
+bcm2835_v4l2           38812  0
+videobuf2_vmalloc       5187  1 bcm2835_v4l2
+videobuf2_memops        1268  1 videobuf2_vmalloc
+videobuf2_v4l2         16535  1 bcm2835_v4l2
+videobuf2_core         20861  2 bcm2835_v4l2,videobuf2_v4l2
+v4l2_common             3929  2 bcm2835_v4l2,videobuf2_v4l2
+videodev              132913  4 bcm2835_v4l2,v4l2_common,videobuf2_core,videobuf2_v4l2
+media                  11573  1 videodev
+ipv6                  347594  38

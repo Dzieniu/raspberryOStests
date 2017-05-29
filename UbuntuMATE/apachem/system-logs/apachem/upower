@@ -1,0 +1,47 @@
+Device: /org/freedesktop/UPower/devices/keyboard_0003o046Do4004x0005
+  native-path:          /sys/devices/platform/soc/3f980000.usb/usb1/1-1/1-1.5/1-1.5:1.2/0003:046D:C52B.0004/0003:046D:4004.0005
+  vendor:               Logitech, Inc.
+  model:                K360
+  power supply:         no
+  updated:              pon, 29 maj 2017, 11:26:27 (54 seconds ago)
+  has history:          yes
+  has statistics:       no
+  keyboard
+    present:             no
+    rechargeable:        yes
+    state:               unknown
+    warning-level:       none
+    percentage:          0%
+    icon-name:          'battery-missing-symbolic'
+
+Device: /org/freedesktop/UPower/devices/keyboard_0003o046Do4004x0006
+  native-path:          /sys/devices/platform/soc/3f980000.usb/usb1/1-1/1-1.5/1-1.5:1.2/0003:046D:C52B.0004/0003:046D:4004.0006
+  vendor:               Logitech, Inc.
+  model:                K360
+  power supply:         no
+  updated:              pon, 29 maj 2017, 11:26:52 (29 seconds ago)
+  has history:          yes
+  has statistics:       no
+  keyboard
+    present:             no
+    rechargeable:        yes
+    state:               unknown
+    warning-level:       none
+    percentage:          20%
+    icon-name:          'battery-missing-symbolic'
+
+Device: /org/freedesktop/UPower/devices/DisplayDevice
+  power supply:         no
+  updated:              pon, 29 maj 2017, 10:12:28 (4493 seconds ago)
+  has history:          no
+  has statistics:       no
+  unknown
+    warning-level:       none
+    icon-name:          ''
+
+Daemon:
+  daemon-version:  0.99.4
+  on-battery:      no
+  lid-is-closed:   no
+  lid-is-present:  no
+  critical-action: PowerOff

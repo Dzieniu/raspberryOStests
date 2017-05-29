@@ -1,0 +1,7 @@
+1. Wraz z systemem dostajemy programy jak do raspbiana (programowanie itp) przegladarka firefox + YoutubeGUI, komunikator pgwin itp.
+3. Mnostwo ustawien wygladu interfejsu, system bardzo przyjazny dla oka. 
+4. Przy starcie systemu zasoby: 212MiB/926MiB 22%, CPU 3%
+5. Przegladanie stron porownywalne do raspbiana
+6. obsuga wielu pulpitow
+7. czas uruchomienia systemu: 57.47s
+8. vlc,cheese,libreofice,librecalc,firefox(5kart,w tym jutup) - podczas wlaczania totalny zamul, jak juz sie wszystko wlaczylo to dalo sie pracowac, system chodzil przyzwoicie, zuzycie ramu: 563 -61procent, cpu: 30-33% 

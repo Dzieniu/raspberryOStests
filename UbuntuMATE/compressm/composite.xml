@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v5.2.1 (Khanino)-->
+<?xml-stylesheet type="text/xsl" href="pts-results-viewer.xsl"?>
+<PhoronixTestSuite>
+  <Generated>
+    <Title>compressm</Title>
+    <LastModified>2017-05-29 12:00:33</LastModified>
+    <TestClient>Phoronix Test Suite v5.2.1 (Khanino)</TestClient>
+    <Description>ARMv7 rev 4 testing with a BCM2709 and Gallium 0.4 on llvmpipe (LLVM 3.8 128 bits) on Ubuntu 16.04 via the Phoronix Test Suite.</Description>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>compressm</Identifier>
+    <Hardware>Processor: ARMv7 rev 4 @ 1.20GHz (4 Cores), Motherboard: BCM2709, Memory: 925MB, Disk: 31GB SA32G, Graphics: LLVMpipe</Hardware>
+    <Software>OS: Ubuntu 16.04, Kernel: 4.4.38-v7+ (armv7l), Desktop: MATE 1.16.1, Display Server: X Server 1.18.4, Display Driver: modesetting 1.18.4, OpenGL: 3.3 Mesa 12.0.6 Gallium 0.4, Compiler: GCC 5.4.0 20160609, File-System: ext4, Screen Resolution: 1600x900</Software>
+    <User>konrad</User>
+    <TimeStamp>2017-05-29 12:00:34</TimeStamp>
+    <TestClientVersion>5.2.1</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"cpu-scaling-governor":"BCM2835 Freq ondemand"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/compress-gzip-1.1.0</Identifier>
+    <Title>Gzip Compression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>2GB File Compression</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compressm</Identifier>
+        <Value>94.16</Value>
+        <RawString>94.564738988876:93.956239938736:93.956772089005</RawString>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

@@ -7,4 +7,6 @@ rozmiaru ikon i czcionek)
 4. zasoby podczas uruchomienia systemu: 98.2MiB/926 - 10% , Proc: 1%
 5. postawienie serwera: http://malinowepi.pl/post/40685427538/serwer-www-i-php
 6. Chromium bardzo słabo chodzi, wykorzystanie procesora skacze miedzy 75-100% - 
-ciezko sie korzysta z sieci(pewnie przez skomplikowane skrypty JS)
+7. ciezko sie korzysta z sieci(pewnie przez skomplikowane skrypty JS)
+8. Fajna sprawa- jak sie malina przegrzewa, to w prawym gornym rogu pojawia sie znak termometru
+

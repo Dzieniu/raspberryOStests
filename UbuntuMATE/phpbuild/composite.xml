@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v5.2.1 (Khanino)-->
+<?xml-stylesheet type="text/xsl" href="pts-results-viewer.xsl"?>
+<PhoronixTestSuite>
+  <Generated>
+    <Title>phpbuild</Title>
+    <LastModified>2017-05-29 15:39:28</LastModified>
+    <TestClient>Phoronix Test Suite v5.2.1 (Khanino)</TestClient>
+    <Description>ARMv7 rev 4 testing with a BCM2709 and Gallium 0.4 on llvmpipe (LLVM 3.8 128 bits) on Ubuntu 16.04 via the Phoronix Test Suite.</Description>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>phpbuild</Identifier>
+    <Hardware>Processor: ARMv7 rev 4 @ 1.20GHz (4 Cores), Motherboard: BCM2709, Memory: 925MB, Disk: 31GB SA32G, Graphics: LLVMpipe</Hardware>
+    <Software>OS: Ubuntu 16.04, Kernel: 4.4.38-v7+ (armv7l), Desktop: MATE 1.16.1, Display Server: X Server 1.18.4, Display Driver: modesetting 1.18.4, OpenGL: 3.3 Mesa 12.0.6 Gallium 0.4, Compiler: GCC 5.4.0 20160609, File-System: ext4, Screen Resolution: 1600x900</Software>
+    <User>konrad</User>
+    <TimeStamp>2017-05-29 15:39:28</TimeStamp>
+    <TestClientVersion>5.2.1</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=arm-linux-gnueabihf --disable-browser-plugin --disable-libitm --disable-libquadmath --disable-sjlj-exceptions --disable-werror --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --with-arch-directory=arm --with-arch=armv7-a --with-default-libstdcxx-abi=new --with-float=hard --with-fpu=vfpv3-d16 --with-mode=thumb -v","cpu-scaling-governor":"BCM2835 Freq ondemand"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/build-php-1.3.1</Identifier>
+    <Title>Timed PHP Compilation</Title>
+    <AppVersion>5.2.9</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>phpbuild</Identifier>
+        <Value>420.16</Value>
+        <RawString>403.27876615524:427.28577184677:429.90838503838</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pedantic -ldl -lz -lm"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
