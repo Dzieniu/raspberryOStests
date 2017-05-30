@@ -1,0 +1,211 @@
+
+X.Org X Server 1.19.2
+Release Date: 2017-03-02
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-4-armmp-lpae armv7l Debian
+Current Operating System: Linux kali 4.4.50-v7 #1 SMP Fri Apr 21 01:18:29 CDT 2017 armv7l
+Kernel command line: 8250.nr_uarts=0 bcm2708_fb.fbwidth=1600 bcm2708_fb.fbheight=900 bcm2708_fb.fbswap=1 dma.dmachans=0x7f35 bcm2709.boardrev=0xa02082 bcm2709.serial=0x37fadda0 bcm2709.uart_clock=48000000 smsc95xx.macaddr=B8:27:EB:FA:DD:A0 vc_mem.mem_base=0x3dc00000 vc_mem.mem_size=0x3f000000  dwc_otg.fiq_fix_enable=2 console=ttyS0,115200 kgdboc=ttyS0,115200 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 rootwait rootflags=noload net.ifnames=0
+Build Date: 03 March 2017  03:23:00PM
+xorg-server 2:1.19.2-1 (https://www.debian.org/support) 
+Current version of pixman: 0.34.0
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Mon May 29 20:47:36 2017
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+(==) No Layout section.  Using the first Screen section.
+(==) No screen section available. Using defaults.
+(**) |-->Screen "Default Screen Section" (0)
+(**) |   |-->Monitor "<default monitor>"
+(==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+(==) Automatically adding devices
+(==) Automatically enabling devices
+(==) Automatically adding GPU devices
+(==) Max clients allowed: 256, resource mask: 0x1fffff
+(WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+	Entry deleted from font path.
+(==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/100dpi/:unscaled,
+	/usr/share/fonts/X11/75dpi/:unscaled,
+	/usr/share/fonts/X11/Type1,
+	/usr/share/fonts/X11/100dpi,
+	/usr/share/fonts/X11/75dpi,
+	built-ins
+(==) ModulePath set to "/usr/lib/xorg/modules"
+(II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+(II) Loader magic: 0x54cc2f60
+(II) Module ABI versions:
+	X.Org ANSI C Emulation: 0.4
+	X.Org Video Driver: 23.0
+	X.Org XInput driver : 24.1
+	X.Org Server Extension : 10.0
+(++) using VT number 7
+
+(II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+(II) no primary bus or device found
+(II) LoadModule: "glx"
+(II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+(II) Module glx: vendor="X.Org Foundation"
+	compiled for 1.19.2, module version = 1.0.0
+	ABI class: X.Org Server Extension, version 10.0
+(==) Matched modesetting as autoconfigured driver 0
+(==) Matched fbdev as autoconfigured driver 1
+(==) Assigned the driver to the xf86ConfigLayout
+(II) LoadModule: "modesetting"
+(II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+(II) Module modesetting: vendor="X.Org Foundation"
+	compiled for 1.19.2, module version = 1.19.2
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 23.0
+(II) LoadModule: "fbdev"
+(II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+(II) Module fbdev: vendor="X.Org Foundation"
+	compiled for 1.19.0, module version = 0.4.4
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 23.0
+(II) modesetting: Driver for Modesetting Kernel Drivers: kms
+(II) FBDEV: driver for framebuffer: fbdev
+(WW) Falling back to old probe method for modesetting
+(EE) open /dev/dri/card0: No such file or directory
+(WW) Falling back to old probe method for fbdev
+(II) Loading sub module "fbdevhw"
+(II) LoadModule: "fbdevhw"
+(II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+(II) Module fbdevhw: vendor="X.Org Foundation"
+	compiled for 1.19.2, module version = 0.0.2
+	ABI class: X.Org Video Driver, version 23.0
+(II) FBDEV(0): using default device
+(WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+(II) FBDEV(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+(==) FBDEV(0): Depth 24, (==) framebuffer bpp 32
+(==) FBDEV(0): RGB weight 888
+(==) FBDEV(0): Default visual is TrueColor
+(==) FBDEV(0): Using gamma correction (1.0, 1.0, 1.0)
+(II) FBDEV(0): hardware: BCM2708 FB (video memory: 5625kB)
+(II) FBDEV(0): checking modes against framebuffer device...
+(II) FBDEV(0): checking modes against monitor...
+(--) FBDEV(0): Virtual size is 1600x900 (pitch 1600)
+(**) FBDEV(0):  Built-in mode "current"
+(==) FBDEV(0): DPI set to (96, 96)
+(II) Loading sub module "fb"
+(II) LoadModule: "fb"
+(II) Loading /usr/lib/xorg/modules/libfb.so
+(II) Module fb: vendor="X.Org Foundation"
+	compiled for 1.19.2, module version = 1.0.0
+	ABI class: X.Org ANSI C Emulation, version 0.4
+(**) FBDEV(0): using shadow framebuffer
+(II) Loading sub module "shadow"
+(II) LoadModule: "shadow"
+(II) Loading /usr/lib/xorg/modules/libshadow.so
+(II) Module shadow: vendor="X.Org Foundation"
+	compiled for 1.19.2, module version = 1.1.0
+	ABI class: X.Org ANSI C Emulation, version 0.4
+(II) UnloadModule: "modesetting"
+(II) Unloading modesetting
+(==) Depth 24 pixmap format is 32 bpp
+(==) FBDEV(0): Backing store enabled
+(==) FBDEV(0): DPMS enabled
+(==) RandR enabled
+(II) SELinux: Disabled on system
+(II) AIGLX: Screen 0 is not DRI2 capable
+(EE) AIGLX: reverting to software rendering
+(II) IGLX: enabled GLX_MESA_copy_sub_buffer
+(II) IGLX: Loaded and initialized swrast
+(II) GLX: Initialized DRISWRAST GL provider for screen 0
+(II) config/udev: Adding input device Lenovo Wireless Optical Mouse N100 (/dev/input/event0)
+(**) Lenovo Wireless Optical Mouse N100: Applying InputClass "evdev pointer catchall"
+(II) LoadModule: "evdev"
+(II) Loading /usr/lib/xorg/modules/input/evdev_drv.so
+(II) Module evdev: vendor="X.Org Foundation"
+	compiled for 1.19.1, module version = 2.10.5
+	Module class: X.Org XInput Driver
+	ABI class: X.Org XInput driver, version 24.1
+(II) Using input driver 'evdev' for 'Lenovo Wireless Optical Mouse N100'
+(**) Lenovo Wireless Optical Mouse N100: always reports core events
+(**) evdev: Lenovo Wireless Optical Mouse N100: Device: "/dev/input/event0"
+(--) evdev: Lenovo Wireless Optical Mouse N100: Vendor 0x17ef Product 0x6053
+(--) evdev: Lenovo Wireless Optical Mouse N100: Found 9 mouse buttons
+(--) evdev: Lenovo Wireless Optical Mouse N100: Found scroll wheel(s)
+(--) evdev: Lenovo Wireless Optical Mouse N100: Found relative axes
+(--) evdev: Lenovo Wireless Optical Mouse N100: Found x and y relative axes
+(--) evdev: Lenovo Wireless Optical Mouse N100: Found absolute axes
+(II) evdev: Lenovo Wireless Optical Mouse N100: Forcing absolute x/y axes to exist.
+(II) evdev: Lenovo Wireless Optical Mouse N100: Configuring as mouse
+(II) evdev: Lenovo Wireless Optical Mouse N100: Adding scrollwheel support
+(**) evdev: Lenovo Wireless Optical Mouse N100: YAxisMapping: buttons 4 and 5
+(**) evdev: Lenovo Wireless Optical Mouse N100: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+(**) Option "config_info" "udev:/sys/devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.0/0003:17EF:6053.0001/input/input0/event0"
+(II) XINPUT: Adding extended input device "Lenovo Wireless Optical Mouse N100" (type: MOUSE, id 6)
+(II) evdev: Lenovo Wireless Optical Mouse N100: initialized for relative axes.
+(WW) evdev: Lenovo Wireless Optical Mouse N100: ignoring absolute axes.
+(**) Lenovo Wireless Optical Mouse N100: (accel) keeping acceleration scheme 1
+(**) Lenovo Wireless Optical Mouse N100: (accel) acceleration profile 0
+(**) Lenovo Wireless Optical Mouse N100: (accel) acceleration factor: 2.000
+(**) Lenovo Wireless Optical Mouse N100: (accel) acceleration threshold: 4
+(II) config/udev: Adding input device Lenovo Wireless Optical Mouse N100 (/dev/input/mouse0)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device Logitech K360 (/dev/input/event1)
+(**) Logitech K360: Applying InputClass "evdev keyboard catchall"
+(II) Using input driver 'evdev' for 'Logitech K360'
+(**) Logitech K360: always reports core events
+(**) evdev: Logitech K360: Device: "/dev/input/event1"
+(--) evdev: Logitech K360: Vendor 0x46d Product 0x4004
+(--) evdev: Logitech K360: Found 1 mouse buttons
+(--) evdev: Logitech K360: Found scroll wheel(s)
+(--) evdev: Logitech K360: Found relative axes
+(II) evdev: Logitech K360: Forcing relative x/y axes to exist.
+(--) evdev: Logitech K360: Found absolute axes
+(II) evdev: Logitech K360: Forcing absolute x/y axes to exist.
+(--) evdev: Logitech K360: Found keys
+(II) evdev: Logitech K360: Configuring as mouse
+(II) evdev: Logitech K360: Configuring as keyboard
+(II) evdev: Logitech K360: Adding scrollwheel support
+(**) evdev: Logitech K360: YAxisMapping: buttons 4 and 5
+(**) evdev: Logitech K360: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+(**) Option "config_info" "udev:/sys/devices/platform/soc/3f980000.usb/usb1/1-1/1-1.5/1-1.5:1.2/0003:046D:C52B.0004/0003:046D:4004.0005/input/input1/event1"
+(II) XINPUT: Adding extended input device "Logitech K360" (type: KEYBOARD, id 7)
+(**) Option "xkb_rules" "evdev"
+(**) Option "xkb_model" "pc105"
+(**) Option "xkb_layout" "us"
+(II) evdev: Logitech K360: initialized for relative axes.
+(WW) evdev: Logitech K360: ignoring absolute axes.
+(**) Logitech K360: (accel) keeping acceleration scheme 1
+(**) Logitech K360: (accel) acceleration profile 0
+(**) Logitech K360: (accel) acceleration factor: 2.000
+(**) Logitech K360: (accel) acceleration threshold: 4
+(II) config/udev: Adding input device Logitech K360 (/dev/input/event2)
+(**) Logitech K360: Applying InputClass "evdev keyboard catchall"
+(II) Using input driver 'evdev' for 'Logitech K360'
+(**) Logitech K360: always reports core events
+(**) evdev: Logitech K360: Device: "/dev/input/event2"
+(--) evdev: Logitech K360: Vendor 0x46d Product 0x4004
+(--) evdev: Logitech K360: Found 1 mouse buttons
+(--) evdev: Logitech K360: Found scroll wheel(s)
+(--) evdev: Logitech K360: Found relative axes
+(II) evdev: Logitech K360: Forcing relative x/y axes to exist.
+(--) evdev: Logitech K360: Found absolute axes
+(II) evdev: Logitech K360: Forcing absolute x/y axes to exist.
+(--) evdev: Logitech K360: Found keys
+(II) evdev: Logitech K360: Configuring as mouse
+(II) evdev: Logitech K360: Configuring as keyboard
+(II) evdev: Logitech K360: Adding scrollwheel support
+(**) evdev: Logitech K360: YAxisMapping: buttons 4 and 5
+(**) evdev: Logitech K360: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+(**) Option "config_info" "udev:/sys/devices/platform/soc/3f980000.usb/usb1/1-1/1-1.5/1-1.5:1.2/0003:046D:C52B.0004/0003:046D:4004.0006/input/input2/event2"
+(II) XINPUT: Adding extended input device "Logitech K360" (type: KEYBOARD, id 8)
+(**) Option "xkb_rules" "evdev"
+(**) Option "xkb_model" "pc105"
+(**) Option "xkb_layout" "us"
+(II) evdev: Logitech K360: initialized for relative axes.
+(WW) evdev: Logitech K360: ignoring absolute axes.
+(**) Logitech K360: (accel) keeping acceleration scheme 1
+(**) Logitech K360: (accel) acceleration profile 0
+(**) Logitech K360: (accel) acceleration factor: 2.000
+(**) Logitech K360: (accel) acceleration threshold: 4

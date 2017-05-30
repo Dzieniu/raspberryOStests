@@ -1,0 +1,16 @@
+Module                  Size  Used by
+hid_logitech_hidpp     10382  0
+brcmfmac              185063  0
+brcmutil                5661  1 brcmfmac
+evdev                  11460  3
+joydev                  9088  0
+hid_logitech_dj        10004  0
+cfg80211              427790  1 brcmfmac
+rfkill                 16108  3 cfg80211
+bcm2835_gpiomem         2976  0
+bcm2835_wdt             3225  0
+uio_pdrv_genirq         3228  0
+uio                     8000  1 uio_pdrv_genirq
+ip_tables              11445  0
+x_tables               13165  1 ip_tables
+ipv6                  344078  36

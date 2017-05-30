@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v7.0.1-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>compressk</Title>
+    <LastModified>2017-05-30 11:43:05</LastModified>
+    <TestClient>Phoronix Test Suite v7.0.1 (Ringsaker)</TestClient>
+    <Description>ARMv7 rev 4 testing with a BCM2709 Raspberry Pi 3 Model B Rev 1.2 and llvmpipe 1024MB on Kali kali-rolling via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>compressk</Identifier>
+    <Hardware>Processor: ARMv7 rev 4 @ 1.20GHz (4 Cores), Motherboard: BCM2709 Raspberry Pi 3 Model B Rev 1.2, Memory: 925MB, Disk: 31GB SA32G, Graphics: LLVMpipe</Hardware>
+    <Software>OS: Kali kali-rolling, Kernel: 4.4.50-v7 (armv7l), Desktop: Xfce 4.12, Display Server: X Server 1.19.2, Display Driver: modesetting 1.19.2, OpenGL: 3.3 Mesa 13.0.6 Gallium 0.4 (LLVM 3.9 128 bits), Compiler: GCC 6.3.0 20170516, File-System: ext4, Screen Resolution: 1600x900</Software>
+    <User>root</User>
+    <TimeStamp>2017-05-30 11:31:52</TimeStamp>
+    <TestClientVersion>7.0.1</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"cpu-scaling-governor":"BCM2835 Freq powersave"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/compress-gzip-1.1.0</Identifier>
+    <Title>Gzip Compression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>2GB File Compression</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compressk</Identifier>
+        <Value>148.38</Value>
+        <RawString>151.94853591919:146.87044787407:146.31221699715</RawString>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

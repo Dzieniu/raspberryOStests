@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v7.0.1-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>phpbenchk</Title>
+    <LastModified>2017-05-29 19:01:26</LastModified>
+    <TestClient>Phoronix Test Suite v7.0.1 (Ringsaker)</TestClient>
+    <Description>ARMv7 rev 4 testing with a BCM2709 Raspberry Pi 3 Model B Rev 1.2 and llvmpipe 1024MB on Kali kali-rolling via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>phpbenchk</Identifier>
+    <Hardware>Processor: ARMv7 rev 4 @ 1.20GHz (4 Cores), Motherboard: BCM2709 Raspberry Pi 3 Model B Rev 1.2, Memory: 925MB, Disk: 31GB SA32G, Graphics: LLVMpipe</Hardware>
+    <Software>OS: Kali kali-rolling, Kernel: 4.4.50-v7 (armv7l), Desktop: Xfce 4.12, Display Server: X Server 1.19.2, Display Driver: modesetting 1.19.2, OpenGL: 3.3 Mesa 13.0.6 Gallium 0.4 (LLVM 3.9 128 bits), Compiler: GCC 6.3.0 20170516, File-System: ext4, Screen Resolution: 1600x900</Software>
+    <User>root</User>
+    <TimeStamp>2017-05-29 18:34:29</TimeStamp>
+    <TestClientVersion>7.0.1</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"cpu-scaling-governor":"BCM2835 Freq powersave"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/phpbench-1.1.1</Identifier>
+    <Title>PHPBench</Title>
+    <AppVersion>0.8.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>PHP Benchmark Suite</Description>
+    <Scale>Score</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>phpbenchk</Identifier>
+        <Value>18613</Value>
+        <RawString>18615:18604:18620</RawString>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

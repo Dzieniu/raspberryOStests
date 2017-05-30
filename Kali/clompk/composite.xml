@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v7.0.1-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>clompk</Title>
+    <LastModified>2017-05-30 11:57:48</LastModified>
+    <TestClient>Phoronix Test Suite v7.0.1 (Ringsaker)</TestClient>
+    <Description>ARMv7 rev 4 testing with a BCM2709 Raspberry Pi 3 Model B Rev 1.2 and llvmpipe 1024MB on Kali kali-rolling via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>clompk</Identifier>
+    <Hardware>Processor: ARMv7 rev 4 @ 1.20GHz (4 Cores), Motherboard: BCM2709 Raspberry Pi 3 Model B Rev 1.2, Memory: 925MB, Disk: 31GB SA32G, Graphics: LLVMpipe</Hardware>
+    <Software>OS: Kali kali-rolling, Kernel: 4.4.50-v7 (armv7l), Desktop: Xfce 4.12, Display Server: X Server 1.19.2, Display Driver: modesetting 1.19.2, OpenGL: 3.3 Mesa 13.0.6 Gallium 0.4 (LLVM 3.9 128 bits), Compiler: GCC 6.3.0 20170516, File-System: ext4, Screen Resolution: 1600x900</Software>
+    <User>root</User>
+    <TimeStamp>2017-05-30 11:49:10</TimeStamp>
+    <TestClientVersion>7.0.1</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=arm-linux-gnueabihf --disable-browser-plugin --disable-libitm --disable-libquadmath --disable-sjlj-exceptions --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-nls --enable-objc-gc=auto --enable-plugin --enable-shared --enable-threads=posix --host=arm-linux-gnueabihf --program-prefix=arm-linux-gnueabihf- --target=arm-linux-gnueabihf --with-arch-directory=arm --with-arch=armv7-a --with-default-libstdcxx-abi=new --with-float=hard --with-fpu=vfpv3-d16 --with-mode=thumb --with-target-system-zlib -v","cpu-scaling-governor":"BCM2835 Freq powersave"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/clomp-1.0.0</Identifier>
+    <Title>CLOMP</Title>
+    <AppVersion>3.3</AppVersion>
+    <Arguments></Arguments>
+    <Description>Static OMP Speedup</Description>
+    <Scale>Speedup</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>clompk</Identifier>
+        <Value>3.60</Value>
+        <RawString>3.09:3.71:3.64:3.67:3.63:3.68:3.63:3.65:3.69:3.64</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"--openmp -O3 -lm"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
