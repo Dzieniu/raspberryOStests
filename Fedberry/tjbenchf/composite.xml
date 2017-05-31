@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v6.6.0-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>tjbenchf</Title>
+    <LastModified>2017-05-31 04:50:00</LastModified>
+    <TestClient>Phoronix Test Suite v6.6.0 (Loppa)</TestClient>
+    <Description>ARMv7 rev 4 testing with a BCM2835 Raspberry Pi 3 Model B Rev 1.2 and Gallium 0.4 on llvmpipe (LLVM 3.8 128 bits) on FedBerry via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>tjbenchf</Identifier>
+    <Hardware>Processor: ARMv7 rev 4 @ 1.20GHz (4 Cores), Motherboard: BCM2835 Raspberry Pi 3 Model B Rev 1.2, Memory: 859MB, Disk: 31GB SA32G, Graphics: LLVMpipe</Hardware>
+    <Software>OS: FedBerry, Kernel: 4.9.10-1.e4fd443.bcm2709.fc25.armv7hl (armv7l), Desktop: Openbox 3.6.1, OpenGL: 2.1 Mesa 13.0.3 Gallium 0.4, Compiler: GCC 6.3.1 20161221, File-System: ext4, Screen Resolution: 1600x900</Software>
+    <User>ak2projekt</User>
+    <TimeStamp>2017-05-31 04:49:36</TimeStamp>
+    <TestClientVersion>6.6.0</TestClientVersion>
+    <Notes>SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=armv7hl-redhat-linux-gnueabi --disable-libgcj --disable-libmpx --disable-libunwind-exceptions --disable-sjlj-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,fortran,ada,go,lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-abi=aapcs-linux --with-arch=armv7-a --with-float=hard --with-fpu=vfpv3-d16 --with-isl --with-linker-hash-style=gnu --with-tune=cortex-a8","cpu-scaling-governor":"BCM2835 Freq ondemand"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/tjbench-1.0.1</Identifier>
+    <Title>libjpeg-turbo tjbench</Title>
+    <AppVersion>1.5.1</AppVersion>
+    <Arguments>decompression-throughput</Arguments>
+    <Description>Test: Decompression Throughput</Description>
+    <Scale>Megapixels/sec</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>tjbenchf</Identifier>
+        <Value>27.53</Value>
+        <RawString>27.379565:27.746055:27.465429</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -lm"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

@@ -1,0 +1,312 @@
+Booting Linux on physical CPU 0x0
+Linux version 4.9.10-1.e4fd443.bcm2709.fc25.armv7hl (mockbuild@rpi3) (gcc version 6.3.1 20161221 (Red Hat 6.3.1-1) (GCC) ) #1 SMP Thu Feb 16 11:44:23 AWST 2017
+CPU: ARMv7 Processor [410fd034] revision 4 (ARMv7), cr=10c5383d
+CPU: div instructions available: patching division code
+CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+OF: fdt:Machine model: Raspberry Pi 3 Model B Rev 1.2
+cma: Reserved 8 MiB at 0x36800000
+Memory policy: Data cache writealloc
+On node 0 totalpages: 225280
+free_area_init_node: node 0, pgdat 80c78c40, node_mem_map b603a000
+  Normal zone: 1980 pages used for memmap
+  Normal zone: 0 pages reserved
+  Normal zone: 225280 pages, LIFO batch:31
+percpu: Embedded 14 pages/cpu @b5ff4000 s25548 r8192 d23604 u57344
+pcpu-alloc: s25548 r8192 d23604 u57344 alloc=14*4096
+pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 223300
+PID hash table entries: 4096 (order: 2, 16384 bytes)
+Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+Memory: 871288K/901120K available (7168K kernel code, 524K rwdata, 2088K rodata, 1024K init, 790K bss, 21640K reserved, 8192K cma-reserved)
+Virtual kernel memory layout:
+                   vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+                   fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+                   vmalloc : 0xb7800000 - 0xff800000   (1152 MB)
+                   lowmem  : 0x80000000 - 0xb7000000   ( 880 MB)
+                   modules : 0x7f000000 - 0x80000000   (  16 MB)
+                     .text : 0x80008000 - 0x80800000   (8160 kB)
+                     .init : 0x80b00000 - 0x80c00000   (1024 kB)
+                     .data : 0x80c00000 - 0x80c83394   ( 525 kB)
+                      .bss : 0x80c85000 - 0x80d4abcc   ( 791 kB)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+Hierarchical RCU implementation.
+	Build-time adjustment of leaf fanout to 32.
+NR_IRQS:16 nr_irqs:16 16
+arm_arch_timer: Architected cp15 timer(s) running at 19.20MHz (phys).
+clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+Switching to timer-based delay loop, resolution 52ns
+Console: colour dummy device 80x30
+console [tty1] enabled
+Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=192000)
+pid_max: default: 32768 minimum: 301
+Security Framework initialized
+Yama: becoming mindful.
+SELinux:  Initializing.
+SELinux:  Starting in permissive mode
+Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Disabling cpuset control group subsystem
+Disabling memory control group subsystem
+CPU: Testing write buffer coherency: ok
+ftrace: allocating 23614 entries in 70 pages
+CPU0: update cpu_capacity 1024
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Setting up static identity map for 0x100000 - 0x100034
+CPU1: update cpu_capacity 1024
+CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+CPU2: update cpu_capacity 1024
+CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+CPU3: update cpu_capacity 1024
+CPU3: thread -1, cpu 3, socket 0, mpidr 80000003
+Brought up 4 CPUs
+SMP: Total of 4 processors activated (153.60 BogoMIPS).
+CPU: All CPU(s) started in HYP mode.
+CPU: Virtualization extensions available.
+devtmpfs: initialized
+VFP support v0.3: implementor 41 architecture 3 part 40 variant 3 rev 4
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+pinctrl core: initialized pinctrl subsystem
+NET: Registered protocol family 16
+DMA: preallocated 1024 KiB pool for atomic coherent allocations
+hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+hw-breakpoint: maximum watchpoint size is 8 bytes.
+bcm2835-mbox 3f00b880.mailbox: mailbox enabled
+bcm2835-dma 3f007000.dma: DMA legacy API manager at b780f000, dmachans=0x1
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+raspberrypi-firmware soc:firmware: Attached to firmware from 2017-02-08 19:08
+NetLabel: Initializing
+NetLabel:  domain hash size = 128
+NetLabel:  protocols = UNLABELED CIPSOv4
+NetLabel:  unlabeled traffic allowed by default
+clocksource: Switched to clocksource arch_sys_counter
+VFS: Disk quotas dquot_6.6.0
+VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+FS-Cache: Loaded
+CacheFiles: Loaded
+NET: Registered protocol family 2
+TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+TCP: Hash tables configured (established 8192 bind 8192)
+UDP hash table entries: 512 (order: 2, 16384 bytes)
+UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+NET: Registered protocol family 1
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+hw perfevents: enabled with armv7_cortex_a7 PMU driver, 7 counters available
+futex hash table entries: 1024 (order: 4, 65536 bytes)
+audit: initializing netlink subsys (disabled)
+audit: type=2000 audit(0.219:1): initialized
+workingset: timestamp_bits=14 max_order=18 bucket_order=4
+FS-Cache: Netfs 'nfs' registered for caching
+NFS: Registering the id_resolver key type
+Key type id_resolver registered
+Key type id_legacy registered
+nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+SELinux:  Registering netfilter hooks
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+io scheduler noop registered
+io scheduler deadline registered (default)
+io scheduler cfq registered
+BCM2708FB: allocated DMA memory f6910000
+BCM2708FB: allocated DMA channel 0 @ b780f000
+Console: switching to colour frame buffer device 200x56
+bcm2835-rng 3f104000.rng: hwrng registered
+vc-cma: Videocore CMA driver
+vc-cma: vc_cma_base      = 0x00000000
+vc-cma: vc_cma_size      = 0x00000000 (0 MiB)
+vc-cma: vc_cma_initial   = 0x00000000 (0 MiB)
+vc-mem: phys_addr:0x00000000 mem_base=0x3dc00000 mem_size:0x3f000000(1008 MiB)
+brd: module loaded
+loop: module loaded
+Loading iSCSI transport class v2.0-870.
+usbcore: registered new interface driver smsc95xx
+dwc_otg: version 3.00a 10-AUG-2012 (platform bus)
+Core Release: 2.80a
+Setting default values for core params
+Finished setting default values for core params
+Using Buffer DMA mode
+Periodic Transfer Interrupt Enhancement - disabled
+Multiprocessor Interrupt Enhancement - disabled
+OTG VER PARAM: 0, OTG VER FLAG: 0
+Dedicated Tx FIFOs mode
+WARN::dwc_otg_hcd_init:1053: FIQ DMA bounce buffers: virt = 0xb6904000 dma = 0xf6904000 len=9024
+FIQ FSM acceleration enabled for :
+               Non-periodic Split Transactions
+               Periodic Split Transactions
+               High-Speed Isochronous Endpoints
+               Interrupt/Control Split Transaction hack enabled
+dwc_otg: Microframe scheduler enabled
+WARN::hcd_init_fiq:459: FIQ on core 1 at 0x805d9964
+WARN::hcd_init_fiq:460: FIQ ASM at 0x805d9cc4 length 36
+WARN::hcd_init_fiq:486: MPHI regs_base at 0xb787c000
+dwc_otg 3f980000.usb: DWC OTG Controller
+dwc_otg 3f980000.usb: new USB bus registered, assigned bus number 1
+dwc_otg 3f980000.usb: irq 62, io mem 0x00000000
+Init: Port Power? op_state=1
+Init: Power Port (0)
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: DWC OTG Controller
+usb usb1: Manufacturer: Linux 4.9.10-1.e4fd443.bcm2709.fc25.armv7hl dwc_otg_hcd
+usb usb1: SerialNumber: 3f980000.usb
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+dwc_otg: FIQ enabled
+dwc_otg: NAK holdoff enabled
+dwc_otg: FIQ split-transaction FSM enabled
+Module dwc_common_port init
+usbcore: registered new interface driver usb-storage
+mousedev: PS/2 mouse device common for all mice
+bcm2835-wdt 3f100000.watchdog: Broadcom BCM2835 watchdog timer
+bcm2835-cpufreq: min=600000 max=1200000
+sdhci: Secure Digital Host Controller Interface driver
+sdhci: Copyright(c) Pierre Ossman
+sdhost: log_buf @ b6907000 (f6907000)
+mmc0: sdhost-bcm2835 loaded - DMA enabled (>1)
+mmc-bcm2835 3f300000.mmc: mmc_debug:0 mmc_debug2:0
+mmc-bcm2835 3f300000.mmc: DMA channel allocated
+mmc0: host does not support reading read-only switch, assuming write-enable
+mmc0: new high speed SDHC card at address 1234
+mmcblk0: mmc0:1234 SA32G 28.9 GiB
+ mmcblk0: p1 p2
+sdhci-pltfm: SDHCI platform and OF driver helper
+ledtrig-cpu: registered to indicate activity on CPUs
+hidraw: raw HID events driver (C) Jiri Kosina
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+vchiq: vchiq_init_state: slot_zero = 0xb6980000, is_master = 0
+Initializing XFRM netlink socket
+NET: Registered protocol family 17
+Key type dns_resolver registered
+Registering SWP/SWPB emulation handler
+registered taskstats version 1
+vc-sm: Videocore shared memory driver
+[vc_sm_connected_init]: start
+[vc_sm_connected_init]: end - returning 0
+of_cfs_init
+of_cfs_init: OK
+mmc1: queuing unknown CIS tuple 0x80 (2 bytes)
+mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+mmc1: queuing unknown CIS tuple 0x80 (7 bytes)
+EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+VFS: Mounted root (ext4 filesystem) readonly on device 179:2.
+devtmpfs: mounted
+Freeing unused kernel memory: 1024K (80b00000 - 80c00000)
+Indeed it is in host mode hprt0 = 00021501
+random: fast init done
+mmc1: new high speed SDIO card at address 0001
+usb 1-1: new high-speed USB device number 2 using dwc_otg
+Indeed it is in host mode hprt0 = 00001101
+usb 1-1: New USB device found, idVendor=0424, idProduct=9514
+usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+hub 1-1:1.0: USB hub found
+hub 1-1:1.0: 5 ports detected
+audit: type=1404 audit(1.589:2): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295
+usb 1-1.1: new high-speed USB device number 3 using dwc_otg
+usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+smsc95xx v1.0.5
+SELinux: 32768 avtab hash slots, 106820 rules.
+smsc95xx 1-1.1:1.0 eth0: register 'smsc95xx' at usb-3f980000.usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:fa:dd:a0
+SELinux: 32768 avtab hash slots, 106820 rules.
+usb 1-1.3: new full-speed USB device number 4 using dwc_otg
+usb 1-1.3: New USB device found, idVendor=17ef, idProduct=6053
+usb 1-1.3: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 1-1.3: Product: Lenovo Wireless Optical Mouse N100
+input: Lenovo Wireless Optical Mouse N100 as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.0/0003:17EF:6053.0001/input/input0
+hid-generic 0003:17EF:6053.0001: input,hidraw0: USB HID v1.11 Mouse [Lenovo Wireless Optical Mouse N100] on usb-3f980000.usb-1.3/input0
+usb 1-1.5: new full-speed USB device number 5 using dwc_otg
+SELinux:  8 users, 14 roles, 5070 types, 305 bools, 1 sens, 1024 cats
+SELinux:  94 classes, 106820 rules
+SELinux:  Permission validate_trans in class security not defined in policy.
+SELinux:  Permission module_load in class system not defined in policy.
+SELinux: the above unknown classes and permissions will be allowed
+SELinux:  Completing initialization.
+SELinux:  Setting up existing superblocks.
+usb 1-1.5: New USB device found, idVendor=046d, idProduct=c52b
+usb 1-1.5: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.5: Product: USB Receiver
+usb 1-1.5: Manufacturer: Logitech
+audit: type=1403 audit(2.449:3): policy loaded auid=4294967295 ses=4294967295
+systemd[1]: Successfully loaded SELinux policy in 878.775ms.
+systemd[1]: RTC configured in localtime, applying delta of -300 minutes to system time.
+systemd[1]: System time before build time, advancing clock.
+systemd[1]: Failed to insert module 'ipv6': Operation not permitted
+systemd[1]: Failed to insert module 'ip_tables': Operation not permitted
+systemd[1]: Relabelled /dev and /run in 38.351ms.
+systemd[1]: systemd 231 running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN)
+systemd[1]: Detected architecture arm.
+systemd[1]: Set hostname to <asdsad>.
+systemd[1]: Binding to IPv6 address not available since kernel does not support IPv6.
+systemd[1]: [/usr/lib/systemd/system/rpcbind.socket:14] Failed to parse address value, ignoring: [::]:111
+systemd[1]: Binding to IPv6 address not available since kernel does not support IPv6.
+systemd[1]: [/usr/lib/systemd/system/rpcbind.socket:15] Failed to parse address value, ignoring: [::]:111
+systemd[1]: Listening on Journal Socket (/dev/log).
+systemd[1]: Listening on Process Core Dump Socket.
+systemd[1]: Listening on Journal Audit Socket.
+audit: type=1130 audit(1469476188.449:4): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-journald comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+audit: type=1130 audit(1496178848.000:5): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=kmod-static-nodes comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+i2c /dev entries driver
+audit: type=1130 audit(1496178848.000:6): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=fake-hwclock comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+audit: type=1130 audit(1496178848.000:7): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-modules-load comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+audit: type=1130 audit(1496178848.179:8): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-sysctl comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+audit: type=1130 audit(1496178848.209:9): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-fsck-root comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+audit: type=1130 audit(1496178848.399:10): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-vconsole-setup comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+systemd-journald[116]: Received request to flush runtime journal from PID 1
+Adding 524284k swap on /swapfile.  Priority:-1 extents:3 across:647164k SSFS
+audit_printk_skb: 3 callbacks suppressed
+audit: type=1130 audit(1496178849.129:12): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-udev-trigger comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+audit: type=1130 audit(1496178849.369:13): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=fedora-readonly comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+audit: type=1130 audit(1496178849.469:14): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-random-seed comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+audit: type=1130 audit(1496178849.739:15): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-tmpfiles-setup-dev comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+audit: type=1130 audit(1496178851.169:16): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-journal-flush comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+audit: type=1130 audit(1496178852.569:17): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-udevd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+audit: type=1130 audit(1496178852.669:18): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=plymouth-start comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+gpiomem-bcm2835 3f200000.gpiomem: Initialised: Registers at 0x3f200000
+logitech-djreceiver 0003:046D:C52B.0004: hiddev0,hidraw1: USB HID v1.11 Device [Logitech USB Receiver] on usb-3f980000.usb-1.5/input2
+usbcore: registered new interface driver brcmfmac
+input: Logitech K360 as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.5/1-1.5:1.2/0003:046D:C52B.0004/0003:046D:4004.0005/input/input1
+logitech-hidpp-device 0003:046D:4004.0005: input,hidraw2: USB HID v1.11 Keyboard [Logitech K360] on usb-3f980000.usb-1.5:1
+input: Logitech K360 as /devices/platform/soc/3f980000.usb/usb1/1-1/1-1.5/1-1.5:1.2/0003:046D:C52B.0004/0003:046D:4004.0006/input/input2
+logitech-hidpp-device 0003:046D:4004.0006: input,hidraw3: USB HID v1.11 Keyboard [Logitech K360] on usb-3f980000.usb-1.5:2
+brcmfmac: brcmf_c_preinit_dcmds: Firmware version = wl0: Aug 29 2016 20:48:16 version 7.45.41.26 (r640327) FWID 01-4527cfab
+brcmfmac: brcmf_cfg80211_reg_notifier: not a ISO3166 code (0x30 0x30)
+audit: type=1400 audit(1496178853.609:19): avc:  denied  { sendto } for  pid=234 comm="systemd-rfkill" path="/run/systemd/journal/socket" scontext=system_u:system_r:systemd_rfkill_t:s0 tcontext=system_u:system_r:syslogd_t:s0 tclass=unix_dgram_socket permissive=0
+audit: type=1300 audit(1496178853.609:19): arch=40000028 syscall=283 per=800000 success=no exit=-13 a0=4 a1=76f5fff8 a2=1d a3=76f60018 items=0 ppid=1 pid=234 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="systemd-rfkill" exe="/usr/lib/systemd/systemd-rfkill" subj=system_u:system_r:systemd_rfkill_t:s0 key=(null)
+audit: type=1327 audit(1496178853.609:19): proctitle="/usr/lib/systemd/systemd-rfkill"
+random: crng init done
+audit_printk_skb: 24 callbacks suppressed
+audit: type=1305 audit(1496178854.229:28): audit_enabled=1 old=1 auid=4294967295 ses=4294967295 subj=system_u:system_r:auditd_t:s0 res=1
+audit: type=1305 audit(1496178854.229:29): audit_pid=260 old=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:auditd_t:s0 res=1
+NET: Registered protocol family 10
+ip_tables: (C) 2000-2006 Netfilter Core Team
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+Ebtables v2.0 registered
+nf_conntrack version 0.5.0 (14336 buckets, 57344 max)
+bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+Netfilter messages via NETLINK v0.30.
+ip_set: protocol 6
+IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+smsc95xx 1-1.1:1.0 eth0: hardware isn't capable of remote wakeup
+IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+brcmfmac: power management disabled
+IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+brcmfmac: power management disabled
+IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+brcmfmac: brcmf_p2p_create_p2pdev: set p2p_disc error
+brcmfmac: brcmf_cfg80211_add_iface: add iface p2p-dev-wlan0 type 10 failed: err=-16
+IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+brcmfmac: power management disabled
+IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready

@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v6.6.0-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>cachef</Title>
+    <LastModified>2017-05-30 14:04:59</LastModified>
+    <TestClient>Phoronix Test Suite v6.6.0 (Loppa)</TestClient>
+    <Description>ARMv7 rev 4 testing with a BCM2835 Raspberry Pi 3 Model B Rev 1.2 and Gallium 0.4 on llvmpipe (LLVM 3.8 128 bits) on FedBerry via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>cachef</Identifier>
+    <Hardware>Processor: ARMv7 rev 4 @ 1.20GHz (4 Cores), Motherboard: BCM2835 Raspberry Pi 3 Model B Rev 1.2, Memory: 859MB, Disk: 31GB SA32G, Graphics: LLVMpipe</Hardware>
+    <Software>OS: FedBerry, Kernel: 4.9.10-1.e4fd443.bcm2709.fc25.armv7hl (armv7l), Desktop: Openbox 3.6.1, Display Server: X Server 1.19.1, OpenGL: 2.1 Mesa 13.0.3 Gallium 0.4, Compiler: GCC 6.3.1 20161221, File-System: ext4, Screen Resolution: 1600x900</Software>
+    <User>root</User>
+    <TimeStamp>2017-05-30 13:45:44</TimeStamp>
+    <TestClientVersion>6.6.0</TestClientVersion>
+    <Notes>SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=armv7hl-redhat-linux-gnueabi --disable-libgcj --disable-libmpx --disable-libunwind-exceptions --disable-sjlj-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,fortran,ada,go,lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-abi=aapcs-linux --with-arch=armv7-a --with-float=hard --with-fpu=vfpv3-d16 --with-isl --with-linker-hash-style=gnu --with-tune=cortex-a8","cpu-scaling-governor":"BCM2835 Freq ondemand"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/cachebench-1.1.0</Identifier>
+    <Title>CacheBench</Title>
+    <AppVersion></AppVersion>
+    <Arguments>-r</Arguments>
+    <Description>Test: Read</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cachef</Identifier>
+        <Value>1637.51</Value>
+        <RawString>1647.732715:1633.149583:1631.65861</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lrt"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/cachebench-1.1.0</Identifier>
+    <Title>CacheBench</Title>
+    <AppVersion></AppVersion>
+    <Arguments>-w</Arguments>
+    <Description>Test: Write</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cachef</Identifier>
+        <Value>2638.57</Value>
+        <RawString>2661.190458:2627.633212:2626.873252</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lrt"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/cachebench-1.1.0</Identifier>
+    <Title>CacheBench</Title>
+    <AppVersion></AppVersion>
+    <Arguments>-b</Arguments>
+    <Description>Test: Read / Modify / Write</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>cachef</Identifier>
+        <Value>1898.65</Value>
+        <RawString>1903.689064:1892.714357:1899.53575</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lrt"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

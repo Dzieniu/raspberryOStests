@@ -1,0 +1,24 @@
+Module                  Size  Used by
+dm_mod                115358  0
+ipv6                  417845  42
+crc_ccitt               1771  1 ipv6
+hid_logitech_hidpp     20277  0
+evdev                  12359  3
+snd_bcm2835            24375  2
+hid_logitech_dj        12148  0
+brcmfmac              222238  0
+snd_seq                61705  0
+snd_seq_device          5504  1 snd_seq
+brcmutil                9092  1 brcmfmac
+snd_pcm                97058  1 snd_bcm2835
+cfg80211              543696  1 brcmfmac
+rfkill                 21008  3 cfg80211
+snd_timer              23900  2 snd_seq,snd_pcm
+snd                    70454  9 snd_seq,snd_timer,snd_seq_device,snd_bcm2835,snd_pcm
+bcm2835_gpiomem         3900  0
+uio_pdrv_genirq         3923  0
+uio                    10396  1 uio_pdrv_genirq
+fixed                   3285  0
+sch_fq_codel            9812  3
+nfsd                  287328  1
+i2c_dev                 7041  0

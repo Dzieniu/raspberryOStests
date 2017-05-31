@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v6.6.0-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>compressf</Title>
+    <LastModified>2017-05-30 15:10:09</LastModified>
+    <TestClient>Phoronix Test Suite v6.6.0 (Loppa)</TestClient>
+    <Description>ARMv7 rev 4 testing with a BCM2835 Raspberry Pi 3 Model B Rev 1.2 and Gallium 0.4 on llvmpipe (LLVM 3.8 128 bits) on FedBerry via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>compressf</Identifier>
+    <Hardware>Processor: ARMv7 rev 4 @ 1.20GHz (4 Cores), Motherboard: BCM2835 Raspberry Pi 3 Model B Rev 1.2, Memory: 859MB, Disk: 31GB SA32G, Graphics: LLVMpipe</Hardware>
+    <Software>OS: FedBerry, Kernel: 4.9.10-1.e4fd443.bcm2709.fc25.armv7hl (armv7l), Desktop: Openbox 3.6.1, OpenGL: 2.1 Mesa 13.0.3 Gallium 0.4, Compiler: GCC 6.3.1 20161221, File-System: ext4, Screen Resolution: 1600x900</Software>
+    <User>ak2projekt</User>
+    <TimeStamp>2017-05-30 14:55:03</TimeStamp>
+    <TestClientVersion>6.6.0</TestClientVersion>
+    <Notes>SELinux: Enabled.</Notes>
+    <JSON>{"cpu-scaling-governor":"BCM2835 Freq ondemand"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/compress-gzip-1.1.0</Identifier>
+    <Title>Gzip Compression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>2GB File Compression</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compressf</Identifier>
+        <Value>113.28</Value>
+        <RawString>133.25698399544:115.24460291862:110.96117377281:108.22423696518:103.48218989372:108.53440499306</RawString>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v6.6.0-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>pyb</Title>
+    <LastModified>2017-05-31 04:25:01</LastModified>
+    <TestClient>Phoronix Test Suite v6.6.0 (Loppa)</TestClient>
+    <Description>ARMv7 rev 4 testing with a BCM2835 Raspberry Pi 3 Model B Rev 1.2 and Gallium 0.4 on llvmpipe (LLVM 3.8 128 bits) on FedBerry via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>pyb</Identifier>
+    <Hardware>Processor: ARMv7 rev 4 @ 1.20GHz (4 Cores), Motherboard: BCM2835 Raspberry Pi 3 Model B Rev 1.2, Memory: 859MB, Disk: 31GB SA32G, Graphics: LLVMpipe</Hardware>
+    <Software>OS: FedBerry, Kernel: 4.9.10-1.e4fd443.bcm2709.fc25.armv7hl (armv7l), Desktop: Openbox 3.6.1, OpenGL: 2.1 Mesa 13.0.3 Gallium 0.4, Compiler: GCC 6.3.1 20161221, File-System: ext4, Screen Resolution: 1600x900</Software>
+    <User>ak2projekt</User>
+    <TimeStamp>2017-05-31 03:56:47</TimeStamp>
+    <TestClientVersion>6.6.0</TestClientVersion>
+    <Notes>Python 2.7.13. SELinux: Enabled.</Notes>
+    <JSON>{"cpu-scaling-governor":"BCM2835 Freq ondemand"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/pybench-1.0.0</Identifier>
+    <Title>PyBench</Title>
+    <AppVersion>2008-08-14</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total For Average Test Times</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>pyb</Identifier>
+        <Value>24950</Value>
+        <RawString>25008:24930:24912</RawString>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
