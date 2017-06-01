@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v4.8.3 (Sokndal)-->
+<?xml-stylesheet type="text/xsl" href="pts-results-viewer.xsl"?>
+<PhoronixTestSuite>
+  <Generated>
+    <Title>redisget</Title>
+    <LastModified>2017-06-01 07:45:17</LastModified>
+    <TestClient>Phoronix Test Suite v4.8.3 (Sokndal)</TestClient>
+    <Description>ARMv7 rev 4 testing with a BCM2709 and Gallium 0.4 on llvmpipe (LLVM 3.7 128 bits) on Raspbian 8.0 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>redisget</Identifier>
+    <Hardware>Processor: ARMv7 rev 4 @ 1.20GHz (4 Cores), Motherboard: BCM2709, Memory: 925MB, Disk: 31GB SA32G, Graphics: LLVMpipe</Hardware>
+    <Software>OS: Raspbian 8.0, Kernel: 4.4.50-v7+ (armv7l), Desktop: Xfce 4.10, Display Server: X Server 1.17.2, OpenGL: 3.0 Mesa 11.1.0 Gallium 0.4, Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1600x900</Software>
+    <User>pi</User>
+    <TimeStamp>2017-06-01 07:45:17</TimeStamp>
+    <TestClientVersion>4.8.3</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=arm-linux-gnueabihf --disable-browser-plugin --disable-libitm --disable-libquadmath --disable-sjlj-exceptions --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --with-arch-directory=arm --with-arch=armv6 --with-ecj-jar=\/usr\/share\/java\/eclipse-ecj.jar --with-float=hard --with-fpu=vfp --with-java-home=\/usr\/lib\/jvm\/java-1.5.0-gcj-4.9-armhf\/jre --with-jvm-jar-dir=\/usr\/lib\/jvm-exports\/java-1.5.0-gcj-4.9-armhf --with-jvm-root-dir=\/usr\/lib\/jvm\/java-1.5.0-gcj-4.9-armhf -v","cpu-scaling-governor":"BCM2835 Freq ondemand"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/redis-1.0.0</Identifier>
+    <Title>Redis</Title>
+    <AppVersion>3.0.1</AppVersion>
+    <Arguments>-t get</Arguments>
+    <Description>Test: GET</Description>
+    <Scale></Scale>
+    <Proportion></Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>redisget</Identifier>
+        <Value>172905.14</Value>
+        <RawString>173701.58:174307.12:170706.73</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-ggdb -rdynamic -lm -pthread -ldl -std=gnu99 -pipe -g3 -O3 -funroll-loops"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

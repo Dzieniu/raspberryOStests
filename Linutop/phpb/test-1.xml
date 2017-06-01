@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v4.8.3 (Sokndal)-->
+<?xml-stylesheet type="text/xsl" href="pts-results-viewer.xsl"?>
+<PhoronixTestSuite>
+  <Generated>
+    <Title>phpb</Title>
+    <LastModified>2017-05-31 16:07:58</LastModified>
+    <TestClient>Phoronix Test Suite v4.8.3 (Sokndal)</TestClient>
+    <Description>ARMv7 rev 4 testing on Raspbian 8.0 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>phpb</Identifier>
+    <Hardware>Processor: ARMv7 rev 4 @ 1.20GHz (4 Cores), Motherboard: BCM2709, Memory: 925MB, Disk: 31GB SA32G, Graphics: LLVMpipe</Hardware>
+    <Software>OS: Raspbian 8.0, Kernel: 4.4.50-v7+ (armv7l), Desktop: Xfce 4.10, Display Server: X Server 1.17.2, OpenGL: 3.0 Mesa 11.1.0 Gallium 0.4, Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1600x900</Software>
+    <User>pi</User>
+    <TimeStamp>2017-05-31 16:07:58</TimeStamp>
+    <TestClientVersion>4.8.3</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"cpu-scaling-governor":"BCM2835 Freq ondemand"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/phpbench-1.1.1</Identifier>
+    <Title>PHPBench</Title>
+    <AppVersion>0.8.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>PHP Benchmark Suite</Description>
+    <Scale>Score</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>phpb</Identifier>
+        <Value>15666</Value>
+        <RawString>15667:15767:15565</RawString>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
